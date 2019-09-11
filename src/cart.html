@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bravo</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+<h1 class="visually-hidden">Фабрика мебели "Bravo"</h1>
+<aside class="sidebar">
+  <a href="#" class="sidebar__logo">
+    <img src="img/logo.svg" alt="Bravo">
+  </a>
+  <nav class="main-nav main-nav--mobile">
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-листы</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Дилерам</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+    </ul>
+  </nav>
+  <ul class="sidebar__list">
+    <li class="sidebar__item"><span class="icon-kitchen"></span>Кухни</li>
+    <li class="sidebar__item"><span class="icon-sofa"></span>Диваны</li>
+    <li class="sidebar__item"><span class="icon-living-room"></span>Гостинные</li>
+    <li class="sidebar__item"><span class="icon-bedroom"></span>Спальни</li>
+    <li class="sidebar__item"><span class="icon-mattress"></span>Матрасы</li>
+    <li class="sidebar__item"><span class="icon-hallway"></span>Прихожие</li>
+    <li class="sidebar__item"><span class="icon-coupboard"></span>Шкафы</li>
+    <li class="sidebar__item"><span class="icon-children-room"></span>Детские
+      <div class="sidebar__subnav">
+        <span class="sidebar__btn">←  Назад</span>
+        <h2 class="sidebar__subnav-main-title">Детские</h2>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Детские</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Прага</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Кровати</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Кровати-машины</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Кровати-зверята</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Дополнительные опции</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Матрасы и наматрасники</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Матрасы</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Наматрасники</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Детские стулья и табуреты</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Детские стулья</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Детские табуреты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Шкафы</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Фаворит</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">D2</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">D3</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Комплектующие</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Мебельные ручки</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Петли</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="sidebar__item"><span class="icon-tables-chears"></span>Столы и стулья</li>
+    <li class="sidebar__item"><span class="icon-components"></span>Комплектующие</li>
+    <li class="sidebar__item"><span class="icon-3d"></span>3D конструктор</li>
+  </ul>
+</aside>
+
+<div class="content">
+  <header class="page-header">
+    <div class="page-header__top">
+      <div class="container">
+        <a href="#" class="page-header__geoposition"><span class="icon-pin"></span>Москва</a>
+        <span class="page-header__phone">+7 (812) 770-60-70</span>
+        <span class="page-header__info">Вы не оптовик?</span>
+        <a href="#" class="page-header__link">Купить в розницу</a>
+      </div>
+    </div>
+    <div class="page-header__bottom">
+      <div class="container">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-листы</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Дилерам</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__wrap">
+          <a href="#" class="page-header__logo">
+            <img src="img/logo.svg" alt="Фабрика мебели Bravo">
+          </a>
+          <div class="page-header__hamburger">
+            <span></span>
+          </div>
+        </div>
+        <div class="page-header__user-menu">
+          <p class="page-header__search">
+            <label class="page-header__search-label" for="search"><span class="icon-search"></span></label>
+            <input id="search" type="text" class="page-header__search-field" placeholder="Я хочу купить...">
+          </p>
+          <a href="#" class="page-header__basket"><span class="icon-basket"></span>0</a>
+          <a href="#" class="page-header__compare"><span class="icon-compare"></span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="cart">
+      <div class="container">
+        <h2 class="cart__title">Корзина</h2>
+        <ul class="cart__list">
+          <li class="cart__item">
+            <div class="cart__row cart__row--title">
+              <div class="cart__name">Наименование</div>
+              <div class="cart__count">Количество</div>
+              <div class="cart__price">Цена</div>
+              <div class="cart__cost">Стоимость</div>
+            </div>
+          </li>
+          <li class="cart__item">
+            <div class="cart__row">
+              <div class="cart__image">
+                <picture>
+                    <source srcset="img/cart-image-1.jpg 1x, img/cart-image-1@2x.jpg 2x">
+                    <img src="img/cart-image-1.jpg" alt="Диван угловой Неаполь Grey">
+                </picture>
+              </div>
+              <div class="cart__name">
+                <p class="cart__name-value">Диван угловой Неаполь Grey</p>
+              </div>
+              <div class="cart__count">
+                <span class="count-btn count-btn--minus"></span>
+                <input type="text" class="cart__count-field" value="1">
+                <span class="count-btn count-btn--plus"></span>
+              </div>
+              <div class="cart__price">
+                <p class="cart__price-title">Цена</p>
+                <p class="cart__price-value">15666.-</p>
+                <p class="cart__price-stock">
+                  <span class="cart__price-stock-value">16490.-</span> <span class="cart__price-disc">-5%</span>
+                </p>
+              </div>
+              <div class="cart__cost">
+                <p class="cart__cost-title">Стоимость</p>
+                <p class="cart__cost-value">15666.-</p>
+              </div>
+              <div class="cart__del">Удалить</div>
+            </div>
+          </li>
+          <li class="cart__item">
+            <div class="cart__row">
+              <div class="cart__image">
+                <picture>
+                  <source srcset="img/cart-image-2.jpg 1x, img/cart-image-2@2x.jpg 2x">
+                  <img src="img/cart-image-2.jpg" alt="Сопрано-02 Белый глянец/Дуб сонома">
+                </picture>
+              </div>
+              <div class="cart__name">
+                <p class="cart__name-value">Сопрано-02 Белый глянец/Дуб сонома</p>
+                <p class="cart__hide-modules">Скрыть все модули композиции</p>
+                <p class="cart__show-modules">Показать все модули композиции</p>
+              </div>
+              <div class="cart__price">
+                <p class="cart__price-title">Цена</p>
+                <p class="cart__price-value">22500.-</p>
+              </div>
+              <div class="cart__count">
+                <span class="count-btn count-btn--minus"></span>
+                <input type="text" class="cart__count-field" value="1">
+                <span class="count-btn count-btn--plus"></span>
+              </div>
+              <div class="cart__cost">
+                <p class="cart__cost-title">Стоимость</p>
+                <p class="cart__cost-value">22500.-</p>
+              </div>
+              <div class="cart__del">Удалить</div>
+            </div>
+            <div class="cart__row cart__row--module">
+              <div class="cart__name">
+                <p class="cart__name-value">Шкаф 2-х створчатый универсальный Сопрано ШК-222 ЛДСП Дуб cонома</p>
+              </div>
+              <div class="cart__price">
+                <p class="cart__price-title">Цена</p>
+                <p class="cart__price-value">4320.-</p>
+              </div>
+              <div class="cart__count">
+                <span class="count-btn count-btn--minus"></span>
+                <input type="text" class="cart__count-field" value="1">
+                <span class="count-btn count-btn--plus"></span>
+              </div>
+              <div class="cart__cost">
+                <p class="cart__cost-title">Стоимость</p>
+                <p class="cart__cost-value">4320.-</p>
+              </div>
+              <div class="cart__del">Удалить</div>
+            </div>
+            <div class="cart__row cart__row--module">
+              <div class="cart__name">
+                <p class="cart__name-value">Кровать Сопрано КР-220 ЛДСП Белый глянец/Дуб cонома 1,6м</p>
+              </div>
+              <div class="cart__price">
+                <p class="cart__price-title">Цена</p>
+                <p class="cart__price-value">3330.-</p>
+              </div>
+              <div class="cart__count">
+                <span class="count-btn count-btn--minus"></span>
+                <input type="text" class="cart__count-field" value="1">
+                <span class="count-btn count-btn--plus"></span>
+              </div>
+              <div class="cart__cost">
+                <p class="cart__cost-title">Стоимость</p>
+                <p class="cart__cost-value">3330.-</p>
+              </div>
+              <div class="cart__del">Удалить</div>
+            </div>
+            <div class="cart__row cart__row--module">
+              <div class="cart__name">
+                <p class="cart__name-value">Ортопедическое основание на ножках для кровати 1,6м</p>
+              </div>
+              <div class="cart__price">
+                <p class="cart__price-title">Цена</p>
+                <p class="cart__price-value">2600.-</p>
+              </div>
+              <div class="cart__count">
+                <span class="count-btn count-btn--minus"></span>
+                <input type="text" class="cart__count-field" value="1">
+                <span class="count-btn count-btn--plus"></span>
+              </div>
+              <div class="cart__cost">
+                <p class="cart__cost-title">Стоимость</p>
+                <p class="cart__cost-value">2600.-</p>
+              </div>
+              <div class="cart__del">Удалить</div>
+            </div>
+          </li>
+          <li class="cart__item">
+            <div class="cart__row">
+              <div class="cart__image">
+                <picture>
+                  <source srcset="img/cart-image-3.jpg 1x, img/cart-image-3@2x.jpg 2x">
+                  <img src="img/cart-image-3.jpg" alt="Матрас «Bravo Econom» Без цвета">
+                </picture>
+              </div>
+              <div class="cart__name">
+                <p class="cart__name-value">Матрас «Bravo Econom» Без цвета</p>
+              </div>
+              <div class="cart__price">
+                <p class="cart__price-title">Цена</p>
+                <p class="cart__price-value">2690.-</p>
+              </div>
+              <div class="cart__count">
+                <span class="count-btn count-btn--minus"></span>
+                <input type="text" class="cart__count-field" value="1">
+                <span class="count-btn count-btn--plus"></span>
+              </div>
+              <div class="cart__cost">
+                <p class="cart__cost-title">Стоимость</p>
+                <p class="cart__cost-value">2690.-</p>
+              </div>
+              <div class="cart__del">Удалить</div>
+            </div>
+          </li>
+        </ul>
+        <div class="cart__controls">
+          <p class="cart__wrap">
+            <span class="cart__clear">Очистить корзину</span>
+            <span class="cart__wholesale-price">Получить оптовую цену</span>
+          </p>
+          <p class="cart__total">
+            <span class="cart__total-text">Итоговая оптовая цена:</span>
+            <span class="cart__total-value">40856.-</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="container">
+        <h2 class="order__title">Быстрое оформление заказа</h2>
+
+        <form class="order__form">
+          <div class="order__row">
+            <div class="order__wrap">
+              <p class="order__label">Заказ отправляется в</p>
+              <div class="select">
+                <div class="select__wrap">
+                  <div class="select__placeholder">Москва</div>
+                  <div class="select__dropdown">
+                    <div class="select__item">Нижний Новгород</div>
+                    <div class="select__item">Санкт-Петербург</div>
+                    <div class="select__item">Рязань</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order__row">
+            <div class="field">
+              <label class="field__label"><span class="required">ИНН</span>
+                <input type="text" class="field__input" placeholder="1111222333444" required>
+              </label>
+            </div>
+            <div class="field">
+              <label class="field__label"><span class="required">Ф.И.О.</span>
+                <input type="text" class="field__input" placeholder="Фамилия Имя Отчество" required>
+              </label>
+            </div>
+            <div class="field">
+              <label class="field__label"><span class="required">E-mail</span>
+                <input type="email" class="field__input" placeholder="example@example.com" required>
+              </label>
+            </div>
+            <div class="field">
+              <label class="field__label"><span class="required">Телефон</span>
+                <input type="tel" class="field__input" placeholder="+7 (926) 111-22-33" required>
+              </label>
+            </div>
+          </div>
+          <div class="order__row">
+            <div class="field">
+              <label class="field__label">Торговая точка
+                <input type="text" class="field__input" placeholder="Торговая точка">
+              </label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="delivery" name="delivery" class="checkbox__input visually-hidden">
+              <label for="delivery" class="checkbox__label checkbox__label--white">Доставка</label>
+            </div>
+          </div>
+          <div class="order__row">
+            <div class="textarea"><label class="textarea__label">Комментарий к заказу
+              <textarea name="comment" class="textarea__field"></textarea>
+            </label>
+            </div>
+          </div>
+          <div class="order__footer">
+            <button class="btn" type="submit">Подтвердить</button>
+            <p class="order__total">
+              <span class="order__total-text">Всего к оплате:</span>
+              <span class="order__total-value">40856.-</span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__top">
+        <div class="page-footer__col">
+          <a href="#" class="page-footer__logo">
+            <img src="img/logo.svg" alt="Bravo">
+          </a>
+        </div>
+        <div class="page-footer__col page-footer__col--active">
+          <h3 class="page-footer__title">Помощь</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Каталог продукции</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Читать новости</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Подписаться на новости</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Как с нами работать</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Рекламные материалы</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Для интернет-магазинов</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__col">
+          <h3 class="page-footer__title">Полезное</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Прайс-листы(опт)</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Схемы сборки</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Сертификаты</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Скачать каталог мебели</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Техническая информация</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__col">
+          <h3 class="page-footer__title">Контакты</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Наш адрес и телефоны</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Письмо директору</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Книга предложений</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Поставщикам</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Купить двери</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__col">
+          <p class="page-footer__phone">+7 (812) 770-60-70</p>
+          <div class="page-footer__wrap">
+            <p class="page-footer__text">Вы не оптовик?</p>
+            <a href="#" class="page-footer__retail-link">Купить в розницу</a>
+          </div>
+
+          <a href="#" class="btn">Стать дилером</a>
+        </div>
+      </div>
+      <div class="page-footer__bottom">
+        <p class="page-footer__info">Внимание! Данный сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями части 2 статьи 437 ГК РФ. Цвет продукции, представленной на сайте может отличаться от реального, в связи с различными настройками ваших устройств для просмотра.</p>
+        <p class="page-footer__copyright">
+          <span class="page-footer__copyright-item">© 2019. Фабрика мебели «Виват»</span>
+          <span class="page-footer__copyright-item">Все права защищены.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="./js/main.min.js"></script>
+</body>
+</html>

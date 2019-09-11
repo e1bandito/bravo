@@ -1,0 +1,27 @@
+.link {
+  color: $dark-yellow;
+
+  &:hover {
+    text-decoration: underline;
+    color: $yellow;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: $light-yellow;
+  }
+
+  &--black {
+    color: $black;
+
+    &:hover {
+      color: $black;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+}

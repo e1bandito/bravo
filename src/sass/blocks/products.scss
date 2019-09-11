@@ -1,0 +1,138 @@
+.products {
+  @media (max-width: $tablet-width) {
+    padding-top: 48px;
+  }
+
+  &--page {
+    margin-bottom: 70px;
+
+    & .sort__wrap {
+      & .select {
+        margin-right: 20px;
+        width: 220px;
+
+        @media (max-width: 930px) {
+          margin-right: 0;
+          width: 49%;
+        }
+
+        @media (max-width: $tablet-width) {
+          margin-right: 0;
+          width: 100%;
+        }
+
+        &--sort {
+          width: 185px;
+          margin-right: 0;
+
+          @media (max-width: 930px) {
+            width: 185px;
+          }
+
+          @media (max-width: $tablet-width) {
+            width: 185px;
+          }
+        }
+
+        &--docs {
+          width: 220px;
+          margin-right: 0;
+
+          @media (max-width: 930px) {
+            width: 220px;
+          }
+
+          @media (max-width: $tablet-width) {
+            width: 220px;
+          }
+        }
+      }
+    }
+
+    & .sort__inner {
+      margin-left: 0;
+      margin-bottom: 0;
+
+      &:first-of-type {
+        @media (max-width: 600px) {
+          flex-direction: row;
+        }
+      }
+
+      &:last-of-type {
+        margin-left: auto;
+
+        @media (max-width: 600px) {
+          margin-left: auto;
+          order: -1;
+        }
+      }
+    }
+
+    & .card {
+      height: 370px;
+
+      @media (max-width: $desktop-width) {
+        height: auto;
+      }
+    }
+  }
+
+  & .card__wrap {
+    border-radius: 4px;
+  }
+
+  & .btn {
+    width: 100%;
+    margin-bottom: 12px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.products__title {
+  margin: 0 0 57px 0;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+}
+
+.products__list {
+  @include list-style-reset;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  @media (max-width: $desktop-width) {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0;
+  }
+}
+
+.products__item {
+  width: calc(100% / 4);
+
+  @media (max-width: 1760px) {
+    width: calc(100% / 3);
+  }
+
+  @media (max-width: 1440px) {
+    width: 50%;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}

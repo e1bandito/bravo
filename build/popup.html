@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bravo</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+
+<div class="overlay">
+  <div class="popup">
+    <h2 class="popup__title">Заполните заявку прямо сейчас, и мы свяжемся с Вами для обсуждения деталей сотрудничества</h2>
+    <p class="popup__info">Внимание! Товар отпускается только юридическим лицам и индивидуальным предпринимателям</p>
+    <form class="popup__form">
+      <div class="field">
+        <label class="field__label">
+          <input type="text" class="field__input" placeholder="Город" required>
+        </label>
+      </div>
+      <div class="field">
+        <label class="field__label">
+          <input type="text" class="field__input" placeholder="Компания" required>
+        </label>
+      </div>
+      <div class="field">
+        <label class="field__label">
+          <input type="text" class="field__input" placeholder="Ваше имя" required>
+        </label>
+      </div>
+      <div class="field">
+        <label class="field__label">
+          <input type="email" class="field__input" placeholder="Адрес электронной почты" required>
+        </label>
+      </div>
+      <div class="field">
+        <label class="field__label">
+          <input type="tel" class="field__input" placeholder="Номер телефона" required>
+        </label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="first-checkbox" name="first-color" class="checkbox__input visually-hidden">
+        <label for="first-checkbox" class="checkbox__label checkbox__label--white">Нажимая кнопку «Стать дилером», я даю своё согласие на обработку персональной информации в соответствии с <a href="#" class="link">Политикой конфиденциальности</a>
+        </label>
+      </div>
+      <button type="submit" class="btn">Стать дилером</button>
+      <span class="popup__close" aria-label="Закрыть"></span>
+    </form>
+  </div>
+</div>
+
+<script src="./js/main.min.js"></script>
+</body>
+</html>

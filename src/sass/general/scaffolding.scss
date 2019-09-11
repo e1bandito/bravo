@@ -1,0 +1,124 @@
+// Пример
+// @font-face {
+//   font-family: 'MyWebFont';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('webfont.eot');
+//   src: url('webfont.eot?#iefix') format('embedded-opentype'),
+//        url('webfont.woff2') format('woff2'),
+//        url('webfont.woff') format('woff'),
+//        url('webfont.otf')  format('opentype'),
+//        url('webfont.ttf')  format('truetype'),
+//        url('webfont.svg#svgFontName') format('svg');
+// }
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/circeregular.eot");
+  src: url("../fonts/circeregular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/circeregular.woff2") format("woff2"),
+    url("../fonts/circeregular.woff") format("woff"),
+    url("../fonts/circeregular.otf")  format("opentype"),
+    url("../fonts/circeregular.ttf")  format("truetype"),
+    url("../fonts/circeregular.svg#svgFontName") format("svg");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/circebold.eot");
+  src: url("../fonts/circebold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/circebold.woff2") format("woff2"),
+    url("../fonts/circebold.woff") format("woff"),
+    url("../fonts/circebold.otf")  format("opentype"),
+    url("../fonts/circebold.ttf")  format("truetype"),
+    url("../fonts/circebold.svg#svgFontName") format("svg");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+}
+
+.ov-h {
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.container {
+  padding-left: 48px;
+  padding-right: 48px;
+
+  @media (max-width: 1200px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($black, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tablet-hide {
+  display: inline-block;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

@@ -1,0 +1,215 @@
+.sidebar {
+  position: relative;
+  width: 300px;
+  min-height: 100vh;
+  box-shadow: 0 0 64px #e4e6eb;
+
+  @media (max-width: 1200px) {
+    width: 250px;
+  }
+
+  @media (max-width: $desktop-width) {
+    display: none;
+
+    &--open {
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 130px;
+      width: 100%;
+      background-color: $white;
+      height: calc(100vh - 130px);
+      box-shadow: none;
+      z-index: 999;
+
+      & .sidebar__logo {
+        display: none;
+      }
+    }
+  }
+}
+
+.sidebar__subnav {
+  display: none;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: $yellow;
+  min-height: 100vh;
+  height: 100%;
+  padding: 60px 48px;
+  z-index: 3;
+  cursor: default;
+
+  &--open {
+    @media (max-width: $desktop-width) {
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 174px;
+      width: 100%;
+      min-height: auto;
+      height: calc(100vh - 174px);
+      background-color: $white;
+      overflow: auto;
+      padding: 32px;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding: 32px 24px;
+    }
+
+    @media (max-width: 500px) {
+      height: calc(100vh - 244px);
+      top: 244px;
+    }
+  }
+}
+
+.sidebar__logo {
+  display: block;
+  padding: 36px;
+  transition: opacity 0.3s;
+
+  & img {
+    display: block;
+    margin: 0 auto;
+    width: 146px;
+    height: 48px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.sidebar__list {
+  @include list-style-reset;
+
+  @media (max-width: $desktop-width) {
+    overflow: auto;
+    height: calc(100vh - 268px);
+    padding-top: 24px;
+
+    &--ov-h {
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    height: calc(100vh - 188px);
+  }
+}
+
+.sidebar__item {
+  padding: 8px 10px 8px 32px;
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  background-color: $white;
+  transition: background-color 0.3s;
+
+  @media (max-width: 1200px) {
+    padding: 8px 10px 8px 20px;
+  }
+
+  @media (max-width: $desktop-width) {
+    position: relative;
+    padding: 8px 32px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 24px;
+      top: 24px;
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid $red;
+      border-bottom: 2px solid $red;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 8px 24px;
+  }
+
+  & > span {
+    font-size: 36px;
+    margin-right: 25px;
+    transition: color 0.3s;
+
+    &::before {
+      margin: 0;
+    }
+  }
+
+  & .link--black {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: $yellow;
+
+    & > .sidebar__subnav {
+      @media (min-width: $desktop-width) {
+        display: block;
+      }
+    }
+  }
+}
+
+.sidebar__btn {
+  display: none;
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 20px;
+  color: $red;
+  cursor: pointer;
+
+  @media (max-width: $desktop-width) {
+    display: inline-block;
+  }
+
+  &:hover {
+    color: $light-red;
+  }
+
+  &:active {
+    color: $dark-red;
+  }
+}
+
+.sidebar__subnav-main-title {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+    margin: 0 0 44px 0;
+    font-size: 20px;
+  }
+}
+
+.sidebar__subnav-title {
+  font-size: 12px;
+  margin: 0 0 15px 0;
+  color: $black;
+  text-transform: uppercase;
+
+  @media (max-width: $desktop-width) {
+    color: $dark-gray;
+  }
+}
+
+.sidebar__subnav-list {
+  @include list-style-reset;
+  margin-bottom: 40px;
+}
+
+.sidebar__subnav-item {
+  margin-bottom: 15px;
+}

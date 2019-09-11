@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bravo</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+<h1 class="visually-hidden">Фабрика мебели "Bravo"</h1>
+<aside class="sidebar">
+  <a href="#" class="sidebar__logo">
+    <img src="img/logo.svg" alt="Bravo">
+  </a>
+  <nav class="main-nav main-nav--mobile">
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-листы</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Дилерам</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+    </ul>
+  </nav>
+  <ul class="sidebar__list">
+    <li class="sidebar__item"><span class="icon-kitchen"></span>Кухни</li>
+    <li class="sidebar__item"><span class="icon-sofa"></span>Диваны</li>
+    <li class="sidebar__item"><span class="icon-living-room"></span>Гостинные</li>
+    <li class="sidebar__item"><span class="icon-bedroom"></span>Спальни</li>
+    <li class="sidebar__item"><span class="icon-mattress"></span>Матрасы</li>
+    <li class="sidebar__item"><span class="icon-hallway"></span>Прихожие</li>
+    <li class="sidebar__item"><span class="icon-coupboard"></span>Шкафы</li>
+    <li class="sidebar__item"><span class="icon-children-room"></span>Детские
+      <div class="sidebar__subnav">
+        <span class="sidebar__btn">←  Назад</span>
+        <h2 class="sidebar__subnav-main-title">Детские</h2>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Детские</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Прага</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Кровати</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Кровати-машины</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Кровати-зверята</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Дополнительные опции</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Матрасы и наматрасники</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Матрасы</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Наматрасники</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Детские стулья и табуреты</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Детские стулья</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Детские табуреты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Шкафы</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Фаворит</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">D2</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">D3</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__subnav-wrap">
+          <h3 class="sidebar__subnav-title">Комплектующие</h3>
+          <ul class="sidebar__subnav-list">
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Мебельные ручки</a>
+            </li>
+            <li class="sidebar__subnav-item">
+              <a href="#" class="sidebar__subnav-link">Петли</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="sidebar__item"><span class="icon-tables-chears"></span>Столы и стулья</li>
+    <li class="sidebar__item"><span class="icon-components"></span>Комплектующие</li>
+    <li class="sidebar__item"><span class="icon-3d"></span>3D конструктор</li>
+  </ul>
+</aside>
+
+<div class="content">
+  <header class="page-header">
+    <div class="page-header__top">
+      <div class="container">
+        <a href="#" class="page-header__geoposition"><span class="icon-pin"></span>Москва</a>
+        <span class="page-header__phone">+7 (812) 770-60-70</span>
+        <span class="page-header__info">Вы не оптовик?</span>
+        <a href="#" class="page-header__link">Купить в розницу</a>
+      </div>
+    </div>
+    <div class="page-header__bottom">
+      <div class="container">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-листы</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Дилерам</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__wrap">
+          <a href="#" class="page-header__logo">
+            <img src="img/logo.svg" alt="Фабрика мебели Bravo">
+          </a>
+          <div class="page-header__hamburger">
+            <span></span>
+          </div>
+        </div>
+        <div class="page-header__user-menu">
+          <p class="page-header__search">
+            <label class="page-header__search-label" for="search"><span class="icon-search"></span></label>
+            <input id="search" type="text" class="page-header__search-field" placeholder="Я хочу купить...">
+          </p>
+          <a href="#" class="page-header__basket"><span class="icon-basket"></span>0</a>
+          <a href="#" class="page-header__compare"><span class="icon-compare"></span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Кухни</a></li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__text">Фьюжн-AL</span></li>
+        </ul>
+      </div>
+    </div>
+    <section class="products products--page">
+      <div class="container">
+        <h1 class="products__title">Кухня Фьюжн-AL</h1>
+        <div class="sort__toggle">
+          <span class="sort__toggle-close">Показать фильтры</span>
+          <span class="sort__toggle-open">Скрыть фильтры</span>
+        </div>
+        <form class="sort">
+          <div class="sort__wrap">
+            <div class="select">
+              <div class="select__wrap">
+                <div class="select__placeholder">Расположение</div>
+                <div class="select__dropdown">
+                  <div class="checkbox">
+                    <input type="checkbox" id="first-location" name="first-location" class="checkbox__input visually-hidden">
+                    <label for="first-location" class="checkbox__label">Первое</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="second-location" name="second-location" class="checkbox__input visually-hidden">
+                    <label for="second-location" class="checkbox__label">Второе</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="third-location" name="third-location" class="checkbox__input visually-hidden">
+                    <label for="third-location" class="checkbox__label">Третье</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="select">
+              <div class="select__wrap">
+                <div class="select__placeholder">Цвет</div>
+                <div class="select__dropdown">
+                  <div class="checkbox">
+                    <input type="checkbox" id="first-color" name="first-color" class="checkbox__input visually-hidden">
+                    <label for="first-color" class="checkbox__label checkbox__label--white">Белый</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="second-color" name="second-color" class="checkbox__input visually-hidden">
+                    <label for="second-color" class="checkbox__label checkbox__label--multi">Мультицвет</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="third-color" name="third-color" class="checkbox__input visually-hidden">
+                    <label for="third-color" class="checkbox__label checkbox__label--light">Светлый</label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="fourth-color" name="fourth-color" class="checkbox__input visually-hidden">
+                    <label for="fourth-color" class="checkbox__label checkbox__label--dark">Темный</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="price-range">
+              <p class="price-range__title">Цена: </p>
+              <div class="price-range__wrap">
+                <label for="min-price" class="price-range__label">От</label>
+                <input type="text" id="min-price" class="price-range__input" placeholder="100">
+              </div>
+              <div class="price-range__wrap">
+                <label for="max-price" class="price-range__label">До</label>
+                <input type="text" id="max-price" class="price-range__input" placeholder="49500">
+              </div>
+            </div>
+          </div>
+          <div class="sort__wrap">
+            <div class="sort__inner">
+              <span class="icon-cloud"></span>
+              <div class="select select--docs">
+              <div class="select__wrap">
+                <div class="select__placeholder">Скачать документацию</div>
+                <div class="select__dropdown">
+                  <div class="select__item"><a href="#" class="select__link">document.pdf</a></div>
+                  <div class="select__item"><a href="#" class="select__link">document.pdf</a></div>
+                  <div class="select__item"><a href="#" class="select__link">document.pdf</a></div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="sort__inner">
+              <span class="sort__title">Сортировать по:</span>
+              <div class="select select--sort">
+              <div class="select__wrap">
+                <div class="select__placeholder">увеличению цены</div>
+                <div class="select__dropdown">
+                  <div class="select__item">по умолчанию</div>
+                  <div class="select__item">увеличению цены</div>
+                  <div class="select__item">уменьшению цены</div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <ul class="products__list">
+        <li class="products__item">
+          <a href="#" class="card">
+            <div class="card__wrap">
+              <div class="card__img">
+                <picture>
+                  <source srcset="img/fusion-03.jpg 1x, img/fusion-03@2x.jpg 2x">
+                  <img src="img/fusion-03.jpg" alt="Фьюжн-03">
+                </picture>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__name">Фьюжн-03</span>
+                <span class="card__price">33582.-</span>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__sizes">В×Ш×Г: 2140×2600×600</span>
+                <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+              </div>
+              <div class="card__item-wrap">
+                <div class="card__color-switcher">
+                  <div class="radio">
+                    <input id="first-color-card-1" type="radio" name="card-1-color" class="radio__input visually-hidden" checked>
+                    <label for="first-color-card-1" class="radio__label radio__label--gray"></label>
+                  </div>
+                  <div class="radio">
+                    <input id="second-color-card-1" type="radio" name="card-1-color" class="radio__input visually-hidden">
+                    <label for="second-color-card-1" class="radio__label radio__label--brown"></label>
+                  </div>
+                </div>
+                <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+              </div>
+              <button class="btn"><span class="icon-basket"></span>В корзину</button>
+              <button class="btn btn--outline">Быстрый просмотр</button>
+            </div>
+          </a>
+        </li>
+        <li class="products__item">
+          <a href="#" class="card">
+            <div class="card__wrap">
+              <div class="card__img">
+                <picture>
+                  <source srcset="img/loft-03.jpg 1x, img/loft-03@2x.jpg 2x">
+                  <img src="img/loft-03.jpg" alt="Шкаф-купе D3-06">
+                </picture>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__name">Лoфт-03</span>
+                <span class="card__price">13989.-</span>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__sizes">В×Ш×Г: 2024×2000×382</span>
+                <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+              </div>
+              <div class="card__item-wrap">
+                <div class="card__color-switcher">
+                  <div class="radio">
+                    <input id="first-color-card-2" type="radio" name="card-2-color" class="radio__input visually-hidden" checked>
+                    <label for="first-color-card-2" class="radio__label radio__label--gray"></label>
+                  </div>
+                  <div class="radio">
+                    <input id="second-color-card-2" type="radio" name="card-2-color" class="radio__input visually-hidden">
+                    <label for="second-color-card-2" class="radio__label radio__label--brown"></label>
+                  </div>
+                </div>
+                <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+              </div>
+              <button class="btn"><span class="icon-basket"></span>В корзину</button>
+              <button class="btn btn--outline">Быстрый просмотр</button>
+            </div>
+          </a>
+        </li>
+        <li class="products__item">
+          <a href="#" class="card">
+            <div class="card__wrap">
+              <div class="card__img">
+                <picture>
+                  <source srcset="img/fusion-04.jpg 1x, img/hit-image-4@2x.jpg 2x">
+                  <img src="img/hit-image-4.jpg" alt="Фьюжн-04">
+                </picture>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__name">Фьюжн-04</span>
+                <span class="card__price">34754.-</span>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__sizes">В×Ш×Г: 2140×2000/2790×600</span>
+                <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+              </div>
+              <div class="card__item-wrap">
+                <div class="card__color-switcher">
+                  <div class="radio">
+                    <input id="first-color-card-3" type="radio" name="card-3-color" class="radio__input visually-hidden" checked>
+                    <label for="first-color-card-3" class="radio__label radio__label--gray"></label>
+                  </div>
+                  <div class="radio">
+                    <input id="second-color-card-3" type="radio" name="card-3-color" class="radio__input visually-hidden">
+                    <label for="second-color-card-3" class="radio__label radio__label--brown"></label>
+                  </div>
+                </div>
+                <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+              </div>
+              <button class="btn"><span class="icon-basket"></span>В корзину</button>
+              <button class="btn btn--outline">Быстрый просмотр</button>
+            </div>
+          </a>
+        </li>
+        <li class="products__item">
+          <a href="#" class="card">
+            <div class="card__wrap">
+              <div class="card__img">
+                <picture>
+                  <source srcset="img/coupe-d3-06.jpg 1x, img/coupe-d3-06@2x.jpg 2x">
+                  <img src="img/coupe-d3-06.jpg" alt="Шкаф-купе D3-06">
+                </picture>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__name">Шкаф-купе D3-06</span>
+                <span class="card__price">23007.-</span>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__sizes">В×Ш×Г: 2200×2100×600</span>
+                <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+              </div>
+              <div class="card__item-wrap">
+                <div class="card__color-switcher">
+                  <div class="radio">
+                    <input id="first-color-card-4" type="radio" name="card-4-color" class="radio__input visually-hidden" checked>
+                    <label for="first-color-card-4" class="radio__label radio__label--gray"></label>
+                  </div>
+                  <div class="radio">
+                    <input id="second-color-card-4" type="radio" name="card-4-color" class="radio__input visually-hidden">
+                    <label for="second-color-card-4" class="radio__label radio__label--brown"></label>
+                  </div>
+                </div>
+                <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+              </div>
+              <button class="btn"><span class="icon-basket"></span>В корзину</button>
+              <button class="btn btn--outline">Быстрый просмотр</button>
+            </div>
+          </a>
+        </li>
+        <li class="products__item">
+          <a href="#" class="card">
+            <div class="card__wrap">
+              <div class="card__img">
+                <picture>
+                  <source srcset="img/fusion-03-2.jpg 1x, img/fusion-03-2@2x.jpg 2x">
+                  <img src="img/fusion-03-2.jpg" alt="Фьюжн-03">
+                </picture>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__name">Фьюжн-03</span>
+                <span class="card__price">33582.-</span>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__sizes">В×Ш×Г: 2140×2600×600</span>
+                <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+              </div>
+              <div class="card__item-wrap">
+                <div class="card__color-switcher">
+                  <div class="radio">
+                    <input id="first-color-card-5" type="radio" name="card-5-color" class="radio__input visually-hidden" checked>
+                    <label for="first-color-card-5" class="radio__label radio__label--gray"></label>
+                  </div>
+                  <div class="radio">
+                    <input id="second-color-card-5" type="radio" name="card-5-color" class="radio__input visually-hidden">
+                    <label for="second-color-card-5" class="radio__label radio__label--brown"></label>
+                  </div>
+                </div>
+                <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+              </div>
+              <button class="btn"><span class="icon-basket"></span>В корзину</button>
+              <button class="btn btn--outline">Быстрый просмотр</button>
+            </div>
+          </a>
+        </li>
+        <li class="products__item">
+          <a href="#" class="card">
+            <div class="card__wrap">
+              <div class="card__img">
+                <picture>
+                  <source srcset="img/loft-03-2.jpg 1x, img/loft-03-2@2x.jpg 2x">
+                  <img src="img/loft-03-2.jpg" alt="Лoфт-03">
+                </picture>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__name">Лoфт-03</span>
+                <span class="card__price">13989.-</span>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__sizes">В×Ш×Г: 2024×2000×382</span>
+                <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+              </div>
+              <div class="card__item-wrap">
+                <div class="card__color-switcher">
+                  <div class="radio">
+                    <input id="first-color-card-6" type="radio" name="card-6-color" class="radio__input visually-hidden" checked>
+                    <label for="first-color-card-6" class="radio__label radio__label--gray"></label>
+                  </div>
+                  <div class="radio">
+                    <input id="second-color-card-6" type="radio" name="card-6-color" class="radio__input visually-hidden">
+                    <label for="second-color-card-6" class="radio__label radio__label--brown"></label>
+                  </div>
+                </div>
+                <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+              </div>
+              <button class="btn"><span class="icon-basket"></span>В корзину</button>
+              <button class="btn btn--outline">Быстрый просмотр</button>
+              <span class="card__hit">Хит продаж</span>
+            </div>
+          </a>
+        </li>
+        <li class="products__item">
+          <a href="#" class="card">
+            <div class="card__wrap">
+              <div class="card__img">
+                <picture>
+                  <source srcset="img/fusion-04-2.jpg 1x, img/fusion-04-2@2x.jpg 2x">
+                  <img src="img/fusion-04-2.jpg" alt="Фьюжн-04">
+                </picture>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__name">Фьюжн-04</span>
+                <span class="card__price">34754.-</span>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__sizes">В×Ш×Г: 2140×2000/2790×600</span>
+                <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+              </div>
+              <div class="card__item-wrap">
+                <div class="card__color-switcher">
+                  <div class="radio">
+                    <input id="first-color-card-7" type="radio" name="card-7-color" class="radio__input visually-hidden" checked>
+                    <label for="first-color-card-7" class="radio__label radio__label--gray"></label>
+                  </div>
+                  <div class="radio">
+                    <input id="second-color-card-7" type="radio" name="card-7-color" class="radio__input visually-hidden">
+                    <label for="second-color-card-7" class="radio__label radio__label--brown"></label>
+                  </div>
+                </div>
+                <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+              </div>
+              <button class="btn"><span class="icon-basket"></span>В корзину</button>
+              <button class="btn btn--outline">Быстрый просмотр</button>
+            </div>
+          </a>
+        </li>
+        <li class="products__item">
+          <a href="#" class="card">
+            <div class="card__wrap">
+              <div class="card__img">
+                <picture>
+                  <source srcset="img/coupe-d3-06-2.jpg 1x, img/coupe-d3-06-2@2x.jpg 2x">
+                  <img src="img/coupe-d3-06-2.jpg" alt="Шкаф-купе D3-06">
+                </picture>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__name">Шкаф-купе D3-06</span>
+                <span class="card__price">23007.-</span>
+              </div>
+              <div class="card__item-wrap">
+                <span class="card__sizes">В×Ш×Г: 2200×2100×600</span>
+                <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+              </div>
+              <div class="card__item-wrap">
+                <div class="card__color-switcher">
+                  <div class="radio">
+                    <input id="first-color-card-8" type="radio" name="card-8-color" class="radio__input visually-hidden" checked>
+                    <label for="first-color-card-8" class="radio__label radio__label--gray"></label>
+                  </div>
+                  <div class="radio">
+                    <input id="second-color-card-8" type="radio" name="card-8-color" class="radio__input visually-hidden">
+                    <label for="second-color-card-8" class="radio__label radio__label--brown"></label>
+                  </div>
+                </div>
+                <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+              </div>
+              <button class="btn"><span class="icon-basket"></span>В корзину</button>
+              <button class="btn btn--outline">Быстрый просмотр</button>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="compile">
+      <h2 class="compile__title">Собери «Фьюжн-AL» сам</h2>
+      <div class="slider">
+        <div class="slider__outer">
+          <div class="slider__inner">
+            <div class="slider__item">
+              <a href="#" class="card">
+                <div class="card__wrap">
+                  <div class="card__img">
+                    <picture>
+                      <source srcset="img/fusion-al-02.png 1x, img/fusion-al-02@2x.png 2x">
+                      <img src="img/fusion-al-02.png" alt="Шкаф Фьюжн-AL-02">
+                    </picture>
+                  </div>
+                  <div class="card__item-wrap">
+                    <span class="card__name">Шкаф Фьюжн-AL-02</span>
+                    <span class="card__price">33582.-</span>
+                  </div>
+                  <div class="card__item-wrap">
+                    <span class="card__sizes">В×Ш×Г: 2140×2600×600</span>
+                    <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+                  </div>
+                  <div class="card__item-wrap">
+                    <div class="card__color-switcher">
+                      <div class="radio">
+                        <input id="first-color-compile-1" type="radio" name="compile-1-color" class="radio__input visually-hidden" checked="">
+                        <label for="first-color-compile-1" class="radio__label radio__label--gray"></label>
+                      </div>
+                      <div class="radio">
+                        <input id="second-color-compile-1" type="radio" name="compile-1-color" class="radio__input visually-hidden">
+                        <label for="second-color-compile-1" class="radio__label radio__label--brown"></label>
+                      </div>
+                    </div>
+                    <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+                  </div>
+                  <button class="btn"><span class="icon-basket"></span>В корзину</button>
+                  <button class="btn btn--outline">Быстрый просмотр</button>
+                </div>
+              </a>
+            </div>
+            <div class="slider__item">
+              <a href="#" class="card">
+                <div class="card__wrap">
+                  <div class="card__img">
+                    <picture>
+                      <source srcset="img/fusion-al-020-2.png 1x, img/fusion-al-020-2@2x.png 2x">
+                      <img src="img/fusion-al-020-2.png" alt="Шкаф Фьюжн-AL-02">
+                    </picture>
+                  </div>
+                  <div class="card__item-wrap">
+                    <span class="card__name">Шкаф Фьюжн-AL-02</span>
+                    <span class="card__price">13989.-</span>
+                  </div>
+                  <div class="card__item-wrap">
+                    <span class="card__sizes">В×Ш×Г: 2024×2000×382</span>
+                    <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+                  </div>
+                  <div class="card__item-wrap">
+                    <div class="card__color-switcher">
+                      <div class="radio">
+                        <input id="first-color-compile-2" type="radio" name="compile-2-color" class="radio__input visually-hidden" checked="">
+                        <label for="first-color-compile-2" class="radio__label radio__label--gray"></label>
+                      </div>
+                      <div class="radio">
+                        <input id="second-color-compile-2" type="radio" name="compile-2-color" class="radio__input visually-hidden">
+                        <label for="second-color-compile-2" class="radio__label radio__label--brown"></label>
+                      </div>
+                    </div>
+                    <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+                  </div>
+                  <button class="btn"><span class="icon-basket"></span>В корзину</button>
+                  <button class="btn btn--outline">Быстрый просмотр</button>
+                </div>
+              </a>
+            </div>
+            <div class="slider__item">
+              <a href="#" class="card">
+                <div class="card__wrap">
+                  <div class="card__img">
+                    <picture>
+                      <source srcset="img/fusion-al-01.png 1x, img/fusion-al-01@2x.png 2x">
+                      <img src="img/fusion-al-01.png" alt="Шкаф Фьюжн-AL-01">
+                    </picture>
+                  </div>
+                  <div class="card__item-wrap">
+                    <span class="card__name">Шкаф Фьюжн-AL-01</span>
+                    <span class="card__price">34754.-</span>
+                  </div>
+                  <div class="card__item-wrap">
+                    <span class="card__sizes">В×Ш×Г: 2140×2000/2790×600</span>
+                    <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+                  </div>
+                  <div class="card__item-wrap">
+                    <div class="card__color-switcher">
+                      <div class="radio">
+                        <input id="first-color-compile-3" type="radio" name="compile-3-color" class="radio__input visually-hidden" checked="">
+                        <label for="first-color-compile-3" class="radio__label radio__label--gray"></label>
+                      </div>
+                    </div>
+                    <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+                  </div>
+                  <button class="btn"><span class="icon-basket"></span>В корзину</button>
+                  <button class="btn btn--outline">Быстрый просмотр</button>
+                </div>
+              </a>
+            </div>
+            <div class="slider__item">
+              <a href="#" class="card">
+                <div class="card__wrap">
+                  <div class="card__img">
+                    <picture>
+                      <source srcset="img/vb-150.png 1x, img/vb-150@2x.png 2x">
+                      <img src="img/vb-150.png" alt="Каркас шкафа ВБ 150">
+                    </picture>
+                  </div>
+                  <div class="card__item-wrap">
+                    <span class="card__name">Каркас шкафа ВБ 150</span>
+                    <span class="card__price">33582.-</span>
+                  </div>
+                  <div class="card__item-wrap">
+                    <span class="card__sizes">В×Ш×Г: 2140×2600×600</span>
+                    <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+                  </div>
+                  <div class="card__item-wrap">
+                    <div class="card__color-switcher">
+                      <div class="radio">
+                        <input id="first-color-compile-4" type="radio" name="compile-4-color" class="radio__input visually-hidden" checked="">
+                        <label for="first-color-compile-4" class="radio__label radio__label--gray"></label>
+                      </div>
+                      <div class="radio">
+                        <input id="second-color-compile-4" type="radio" name="compile-4-color" class="radio__input visually-hidden">
+                        <label for="second-color-compile-4" class="radio__label radio__label--black"></label>
+                      </div>
+                    </div>
+                    <span class="card__compare"><span class="icon-compare"></span>К сравнению</span>
+                  </div>
+                  <button class="btn"><span class="icon-basket"></span>В корзину</button>
+                  <button class="btn btn--outline">Быстрый просмотр</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <span class="slider__btn slider__btn--prev" aria-label="предыдущий слайд"></span>
+        <span class="slider__btn slider__btn--next" aria-label="следующий слайд"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__top">
+        <div class="page-footer__col">
+          <a href="#" class="page-footer__logo">
+            <img src="img/logo.svg" alt="Bravo">
+          </a>
+        </div>
+        <div class="page-footer__col page-footer__col--active">
+          <h3 class="page-footer__title">Помощь</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Каталог продукции</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Читать новости</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Подписаться на новости</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Как с нами работать</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Рекламные материалы</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Для интернет-магазинов</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__col">
+          <h3 class="page-footer__title">Полезное</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Прайс-листы(опт)</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Схемы сборки</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Сертификаты</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Скачать каталог мебели</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Техническая информация</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__col">
+          <h3 class="page-footer__title">Контакты</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Наш адрес и телефоны</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Письмо директору</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Книга предложений</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Поставщикам</a></li>
+            <li class="page-footer__item"><a href="#" class="page-footer__link">Купить двери</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__col">
+          <p class="page-footer__phone">+7 (812) 770-60-70</p>
+          <div class="page-footer__wrap">
+            <p class="page-footer__text">Вы не оптовик?</p>
+            <a href="#" class="page-footer__retail-link">Купить в розницу</a>
+          </div>
+
+          <a href="#" class="btn">Стать дилером</a>
+        </div>
+      </div>
+      <div class="page-footer__bottom">
+        <p class="page-footer__info">Внимание! Данный сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями части 2 статьи 437 ГК РФ. Цвет продукции, представленной на сайте может отличаться от реального, в связи с различными настройками ваших устройств для просмотра.</p>
+        <p class="page-footer__copyright">
+          <span class="page-footer__copyright-item">© 2019. Фабрика мебели «Виват»</span>
+          <span class="page-footer__copyright-item">Все права защищены.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="./js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.bullets {
+  @include list-style-reset;
+  display: none;
+  justify-content: center;
+
+  @media (max-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.bullets__item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $gray;
+  margin-right: 16px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    background-color: $red;
+  }
+
+  &:hover {
+    background-color: $light-red;
+  }
+}

@@ -1,0 +1,299 @@
+.compare {
+  position: relative;
+  padding-bottom: 95px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 48px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
+}
+
+.compare__controls {
+  position: relative;
+  left: 0;
+  top: -53px;
+  display: flex;
+
+  @media (max-width: $desktop-width) {
+    left: auto;
+    top: auto;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.compare__wrap {
+  margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    order: -1;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  & .compare__btn {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.compare__btn {
+  color: $red;
+  line-height: 30px;
+  transition: color 0.3s;
+  cursor: pointer;
+  margin-right: 20px;
+
+  @media (max-width: $tablet-width) {
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
+
+  &:hover {
+    color: $light-red;
+  }
+
+  &:active {
+    color: $dark-red;
+  }
+
+  &--inactive {
+    color: $dark-gray;
+  }
+}
+
+.compare__title {
+  margin: 0 0 27px 0;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.compare__inner {
+  width: 100%;
+  display: flex;
+  overflow: visible;
+}
+
+.compare__sidebar {
+  width: 230px;
+  margin-right: 10px;
+
+  @media (max-width: 500px) {
+    width: 110px;
+    margin-right: 28px;
+  }
+}
+
+.compare__list {
+  @include list-style-reset;
+  padding-top: 200px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 146px;
+  }
+}
+
+.compare__item {
+  color: $dark-gray;
+  margin-bottom: 30px;
+  min-height: 30px;
+  line-height: 30px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 500px) {
+    min-height: 18px;
+    margin-bottom: 30px;
+    line-height: 18px;
+  }
+}
+
+.compare__body {
+  width: calc(100% - 240px);
+
+  @media (max-width: 500px) {
+    width: calc(100% - 138px);
+  }
+
+  & .slider {
+    width: 100%;
+    margin: 0;
+    overflow: visible;
+  }
+
+  & .slider__outer {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  & .slider__item {
+    width: calc(100% / 3);
+
+    @media (max-width: 1400px) {
+      width: 50%;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  & .slider__btn--next {
+    right: -18px;
+    top: 58px;
+
+    @media (max-width: $tablet-width) {
+      top: 16px;
+    }
+  }
+
+  & .slider__btn--prev {
+    left: -18px;
+    top: 58px;
+
+    @media (max-width: $tablet-width) {
+      top: 16px;
+    }
+  }
+}
+
+.compare__card-list {
+  @include list-style-reset;
+}
+
+.compare__img {
+  width: 200px;
+  height: 150px;
+  margin-bottom: 48px;
+  margin-right: 30px;
+
+  @media (max-width: $tablet-width) {
+    width: 96px;
+    height: 72px;
+    margin-bottom: 24px;
+  }
+
+  & img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.compare__del {
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 210px;
+  padding-left: 20px;
+  font-size: 0;
+  color: $red;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 30px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 9px;
+    width: 15px;
+    height: 2px;
+    background-color: $red;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 9px;
+    width: 15px;
+    height: 2px;
+    background-color: $red;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    color: $light-red;
+
+    &::after {
+      background-color: $light-red;
+    }
+
+    &::before {
+      background-color: $light-red;
+    }
+  }
+
+  &:active {
+    color: $light-red;
+
+    &::after {
+      background-color: $dark-red;
+    }
+
+    &::before {
+      background-color: $dark-red;
+    }
+  }
+}
+
+.compare__card-item {
+  margin-bottom: 30px;
+  min-height: 30px;
+  line-height: 30px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 500px) {
+    min-height: 18px;
+    line-height: 18px;
+
+    &:nth-child(4) {
+      min-height: 36px;
+    }
+  }
+
+  &:first-child {
+    font-size: 24px;
+    font-weight: 700;
+
+    @media (max-width: $tablet-width) {
+      font-size: 18px;
+    }
+  }
+}
+
+.compare__card {
+  position: relative;
+}

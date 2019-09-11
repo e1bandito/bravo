@@ -1,0 +1,142 @@
+.uikit {
+  width: 1270px;
+  padding: 84px 108px;
+  margin: 0 auto;
+}
+
+.uikit__title {
+  margin: 0 0 75px 0;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.uikit__row {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+.uikit__col {
+  width: 25%;
+  line-height: 18px;
+  color: $dark-gray;
+
+  & .icon-info {
+    color: $gray;
+    font-size: 16px;
+    cursor: pointer;
+
+    &::before {
+      margin: 0;
+    }
+
+    &:hover {
+      color: $hover-gray;
+    }
+  }
+
+  & .field {
+    width: 180px;
+  }
+
+  & .select {
+  width: 180px;
+  }
+
+  &--hovered {
+    & .btn {
+      background-color: $dark-yellow;
+      border-color: $dark-yellow;
+    }
+
+    & .btn--outline {
+      background-color: $yellow;
+      border-color: $yellow;
+      color: $white;
+    }
+
+    & .icon-info {
+      color: $hover-gray;
+    }
+
+    & .link {
+      text-decoration: underline;
+      color: $light-yellow;
+
+      &--black {
+        color: $black;
+      }
+    }
+
+    & .tabs__btn {
+      color: $hover-dark-gray;
+    }
+
+    & .field__input {
+      background-color: $hover-input-bg;
+    }
+
+    & .count-btn {
+      background-color: $hover-input-bg;
+    }
+
+    & .checkbox__label::before {
+      border-color: $hover-input-bg;
+      background-color: $hover-input-bg;
+    }
+
+    & .checkbox__input:checked + .checkbox__label::before {
+      background-color: $dark-yellow;
+      border-color: $dark-yellow;
+    }
+
+    & .select__placeholder {
+      background-color: $hover-input-bg;
+    }
+  }
+  &--push {
+    & .btn {
+      background-color: $light-yellow;
+      border-color: $light-yellow;
+    }
+
+    & .btn--outline {
+      color: $white;
+      background-color: $light-yellow;
+      border-color: $light-yellow;
+    }
+
+    & .link {
+      text-decoration: none;
+      color: $dark-yellow;
+    }
+
+    & .field__input {
+      background-color: $active-input-bg;
+    }
+
+    & .count-btn {
+      background-color: $active-input-bg;
+    }
+
+    & .checkbox__label::before {
+      border-color: $active-input-bg;
+      background-color: $active-input-bg;
+    }
+
+    & .checkbox__input:checked + .checkbox__label::before {
+      border-color: $light-yellow;
+      background-color: $light-yellow;
+    }
+
+    & .select__placeholder {
+      background-color: $active-input-bg;
+    }
+
+    & .link {
+      color: $light-yellow;
+    }
+  }
+}
+
+

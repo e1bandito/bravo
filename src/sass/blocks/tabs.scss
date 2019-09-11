@@ -1,0 +1,64 @@
+.tabs__buttons {
+  @include list-style-reset;
+  padding-bottom: 8px;
+  margin-bottom: 70px;
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.tabs__btn {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  transition: color 0.3s;
+  cursor: pointer;
+  color: $hover-dark-gray;
+  margin-right: 25px;
+  white-space: nowrap;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    color: $black;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $red;
+      bottom: -8px;
+      left: 0;
+    }
+  }
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.tabs__content {
+  @include list-style-reset;
+}
+
+.tabs__content-item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}

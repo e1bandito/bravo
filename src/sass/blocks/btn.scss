@@ -1,0 +1,38 @@
+.btn {
+  width: 160px;
+  display: block;
+  border-radius: 4px;
+  line-height: 18px;
+  padding: 8px 24px 8px;
+  background-color: $yellow;
+  color: $black;
+  border: 1px solid $yellow;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    background-color: $dark-yellow;
+    border-color: $dark-yellow;
+  }
+
+  &:active {
+    background-color: $light-yellow;
+    border-color: $light-yellow;
+  }
+
+  &--outline {
+    background-color: $white;
+    color: $yellow;
+
+    &:hover {
+      background-color: $dark-yellow;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $light-yellow;
+      border-color: $light-yellow;
+    }
+  }
+}

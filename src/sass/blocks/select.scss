@@ -1,0 +1,169 @@
+.select {
+  width: 220px;
+  height: 36px;
+  position: relative;
+  line-height: 16px;
+  z-index: 2;
+  color: $black;
+
+  & .checkbox {
+    margin-bottom: 12px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  & .checkbox__label {
+
+    &::before {
+      border-color: $gray;
+      background-color: $white;
+    }
+
+    &--white::before {
+      background-color: $white;
+    }
+
+    &--multi::before {
+      background-image: linear-gradient(45deg, #0a00b2 0%, #ff0000 50%, #fffc00 100%);
+    }
+
+    &--light::before {
+      background-color: $lightest-gray;
+    }
+
+    &--dark::before {
+      background-color: $darkest-gray;
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &--sort {
+    width: 185px;
+    z-index: 1;
+
+    & .select__placeholder {
+      background-color: transparent;
+      padding-right: 35px;
+    }
+  }
+
+  &--docs {
+    width: auto;
+    z-index: 1;
+
+    & .select__placeholder {
+      background-color: transparent;
+      padding-right: 35px;
+    }
+
+    & .select__link {
+      color: $black;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  &--active {
+    & .select__wrap {
+      box-shadow: 0 0 48px #e4e6eb;
+
+      &:hover .select__placeholder {
+        background-color: $white;
+      }
+    }
+
+    & .select__placeholder {
+      background-color: $white;
+
+      &::after {
+        transform: rotate(45deg);
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+    }
+
+    & .select__dropdown {
+      display: block;
+    }
+  }
+}
+
+.select__item {
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 5px 0;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.select__wrap {
+  border-radius: 4px;
+  overflow: hidden;
+
+  &:hover {
+    & .select__placeholder {
+      background-color: $hover-input-bg;
+    }
+  }
+
+  &:active {
+    & .select__placeholder {
+      background-color: $active-input-bg;
+    }
+  }
+}
+
+.select__placeholder {
+  position: relative;;
+  background-color: $light-gray;
+  padding: 10px 16px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 1px;
+    background-color: $black;
+    transform: rotate(45deg);
+    right: 21px;
+    top: 18px;
+    transition: all 0.3s;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 1px;
+    background-color: $black;
+    transform: rotate(-45deg);
+    right: 16px;
+    top: 18px;
+    transition: all 0.3s;
+  }
+}
+
+.select__dropdown {
+  display: none;
+  background-color: $white;
+  padding: 16px;
+}

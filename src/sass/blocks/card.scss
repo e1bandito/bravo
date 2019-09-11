@@ -1,0 +1,270 @@
+.card {
+  position: relative;
+  display: block;
+  border-radius: 4px;
+}
+
+.card__wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px;
+
+  @media (max-width: 600px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  & .btn {
+    opacity: 0;
+
+    & span {
+      display: none;
+    }
+
+    @media (max-width: $desktop-width) {
+      opacity: 1;
+      position: absolute;
+      top: 208px;
+      left: 16px;
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      border-radius: 0;
+      border-top-right-radius: 100%;
+      background-color: $white;
+      border: none;
+      font-size: 0;
+
+      & span {
+        position: absolute;
+        bottom: 10px;
+        left: 4px;
+        display: block;
+        font-size: 18px;
+        color: $red;
+      }
+    }
+
+    @media (max-width: 500px) {
+      top: 150px;
+      left: 24px;
+    }
+  }
+
+  & .btn--outline {
+    @media (max-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    background-color: $white;
+    box-shadow: 0 0 48px #e4e6eb;
+    z-index: 2;
+
+    & .btn {
+      opacity: 1;
+    }
+
+    & .card__compare {
+      display: block;
+    }
+
+    @media (max-width: $desktop-width) {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
+.card__img {
+  margin-bottom: 16px;
+
+  & img {
+    width: 100%;
+    height: 238px;
+    display: block;
+    object-fit: cover;
+
+    @media (max-width: 500px) {
+      height: 180px;
+    }
+  }
+}
+
+.card__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: $black;
+}
+
+.card__item-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 20px;
+
+    @media (max-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card__compare {
+  display: none;
+}
+
+.card__name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $black;
+
+  @media (max-width: $desktop-width) {
+    font-size: 16px;
+  }
+}
+
+.card__price {
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+
+  @media (max-width: $desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.card__sizes {
+  font-size: 14px;
+  line-height: 1;
+  color: $dark-gray;
+
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+  }
+}
+
+.card__reteil {
+  font-size: 14px;
+  line-height: 16px;
+  color: $dark-gray;
+
+  & span {
+    font-size: 14px;
+    margin-right: 8px;
+
+    &::before {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+  }
+}
+
+.card__wrap {
+  position: relative;
+}
+
+.card__stock {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: $red;
+  line-height: 1;
+  color: $white;
+  padding: 25px 10px;
+  border-bottom-right-radius: 100%;
+
+  @media (max-width: 600px) {
+    left: 25px;
+  }
+}
+
+.card__hit {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: $purple;
+  line-height: 1;
+  color: $white;
+  padding: 18px 10px;
+  letter-spacing: -0.3px;
+  border-bottom-right-radius: 100%;
+
+  @media (max-width: 600px) {
+    left: 25px;
+  }
+}
+
+.card__color-switcher {
+  display: flex;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.card__compare {
+  color: $red;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    top: 208px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border-radius: 0;
+    border-top-left-radius: 100%;
+    background-color: $white;
+    border: none;
+    font-size: 0;
+
+    & span {
+      position: absolute;
+      bottom: 10px;
+      right: 2px;
+      display: block;
+      font-size: 18px;
+      color: $red;
+    }
+  }
+
+  @media (max-width: 500px) {
+    top: 150px;
+    right: 24px;
+  }
+
+  & span {
+    font-size: 14px;
+
+    &::before {
+      margin: 0 9px 0 0;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

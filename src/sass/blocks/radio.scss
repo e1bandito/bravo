@@ -1,0 +1,33 @@
+.radio {
+  margin-right: 10px;
+}
+
+.radio__label {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid $gray;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--gray {
+    background-color: $product-gray;
+  }
+
+  &--brown {
+    background-color: $product-brown;
+  }
+
+  &--black {
+    background-color: $darkest-gray;
+  }
+}
+
+.radio__input:checked ~ .radio__label {
+  border-color: $red;
+}

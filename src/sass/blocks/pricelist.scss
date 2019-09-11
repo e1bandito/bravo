@@ -1,0 +1,138 @@
+.pricelist {
+  flex: 1 0 auto;
+  padding-bottom:    125px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 48px;
+  }
+
+  @media (max-width: 700px) {
+    padding-bottom: 75px;
+  }
+}
+
+.pricelist__title {
+  margin: 0 0 40px 0;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.pricelist__list {
+  @include list-style-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricelist__item {
+  width: 25%;
+
+  @media (max-width: 1600px) {
+    width: 33.3%;
+  }
+
+  @media (max-width: 1300px) {
+    width: 50%;
+  }
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+}
+
+.pricelist__card {
+  height: 90px;
+  border-radius: 4px;
+
+  @media (max-width: $desktop-width) {
+    height: auto;
+  }
+}
+
+.pricelist__wrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 24px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @media (max-width: 400px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 0 48px #e4e6eb;
+    background-color: $white;
+    z-index: 2;
+
+    @media (max-width: $desktop-width) {
+      box-shadow: none;
+    }
+
+    & .pricelist__links {
+      display: flex;
+    }
+  }
+}
+
+.pricelist__card-title {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 400;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.pricelist__text {
+  margin: 0 0 15px 0;
+  color: $dark-gray;
+  font-size: 14px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.pricelist__links {
+  display: none;
+  flex-wrap: wrap;
+
+  @media (max-width: $desktop-width) {
+    display: flex;
+  }
+
+  & .link {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & .icon-watch {
+      font-size: 12px;
+      margin-right: 8px;
+    }
+
+    & .icon-pdf {
+      font-size: 12px;
+      margin-right: 2px;
+    }
+
+    & .icon-exel {
+      font-size: 12px;
+      margin-right: 6px;
+    }
+  }
+}

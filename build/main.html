@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bravo</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+  </head>
+  <body>
+    <h1 class="visually-hidden">Фабрика дверей "Bravo"</h1>
+    <!-- Мобильное меню открывается добавлением модификаторов --open для классов .sidebar, .sidebar__subnav и .page-header__hamburger (.sidebar--open, .sidebar__subnav--open, .page-header__hamburger--open). -->
+    <!-- При открытом мобильном меню (.sidebar--open) на body вешается класс ov-h для устранения скролла основного контента. -->
+    <!-- При открытом подменю (.sidebar__subnav--open) на .sidebar__list вешается модификатор --ov-h для устранения скролла основного мобильного меню. -->
+    <aside class="sidebar sidebar--open">
+      <a href="#" class="sidebar__logo">
+        <img src="img/logo.svg" alt="Bravo" width="146" height="48">
+      </a>
+      <nav class="main-nav main-nav--mobile">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Дилерам</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-листы</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Как с нами работать</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="sidebar__list sidebar__list--ov-h">
+        <li class="sidebar__item"><span class="icon-interior"></span>Межкомнатные двери</li>
+        <li class="sidebar__item"><span class="icon-entrance"></span>Входные двери</li>
+        <li class="sidebar__item"><span class="icon-sliding"></span>Раздвижные двери</li>
+        <li class="sidebar__item"><span class="icon-folding"></span>Складные двери</li>
+        <li class="sidebar__item"><span class="icon-arch"></span>Арки и порталы</li>
+        <li class="sidebar__item"><span class="icon-special"></span>Специальные двери</li>
+        <li class="sidebar__item"><span class="icon-hardware"></span>Фурнитура и прочее</li>
+        <li class="sidebar__item"><span class="icon-installation"></span>Монтаж и реставрация
+          <div class="sidebar__subnav sidebar__subnav--open">
+            <span class="sidebar__btn">←  Назад</span>
+            <h2 class="sidebar__subnav-main-title">Монтаж и реставрация</h2>
+            <div class="sidebar__subnav-wrap">
+              <h3 class="sidebar__subnav-title">Монтаж и реставрация</h3>
+              <ul class="sidebar__subnav-list">
+                <li class="sidebar__subnav-item">
+                  <a href="#" class="link link--black">Пена, ПСУЛ</a>
+                </li>
+                <li class="sidebar__subnav-item">
+                  <a href="#" class="link link--black">Инструмент</a>
+                </li>
+                <li class="sidebar__subnav-item">
+                  <a href="#" class="link link--black">Крепеж</a>
+                </li>
+                <li class="sidebar__subnav-item">
+                  <a href="#" class="link link--black">Клей</a>
+                </li>
+                <li class="sidebar__subnav-item">
+                  <a href="#" class="link link--black">Для реставрации</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="sidebar__item"><span class="icon-help"></span>В помощь продавцам</li>
+        <li class="sidebar__item"><span class="icon-for-interior"></span>Для интерьера</li>
+      </ul>
+    </aside>
+
+    <div class="content">
+      <header class="page-header">
+        <div class="page-header__top">
+          <div class="container">
+            <a href="#" class="page-header__geoposition"><span class="icon-pin"></span>Москва</a>
+            <span class="page-header__phone">+7 (812) 770-60-70</span>
+            <span class="page-header__info">Вы не оптовик?</span>
+            <a href="#" class="page-header__link">Купить в розницу</a>
+          </div>
+        </div>
+        <div class="page-header__bottom">
+          <div class="container">
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-листы</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link">Дилерам</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="page-header__wrap">
+              <a href="#" class="page-header__logo">
+                <img src="img/logo.svg" alt="Фабрика мебели Bravo">
+              </a>
+              <div class="page-header__hamburger page-header__hamburger--open">
+                <span></span>
+              </div>
+            </div>
+            <div class="page-header__user-menu">
+              <p class="page-header__search">
+                <label class="page-header__search-label" for="search"><span class="icon-search"></span></label>
+                <input id="search" type="text" class="page-header__search-field" placeholder="Я хочу купить...">
+              </p>
+              <a href="#" class="page-header__basket"><span class="icon-basket"></span>0</a>
+              <a href="#" class="page-header__compare"><span class="icon-compare"></span></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-main">
+        <div class="slider slider--main">
+          <div class="slider__outer">
+            <div class="slider__inner">
+              <a href="#" class="slider__link">
+                <div class="slider__info">
+                  <div class="slider__info-wrap">
+                    <p class="slider__text">Новинка</p>
+                    <h2 class="slider__title">Кухня Глетчер</h2>
+                    <p class="slider__price">от 17 260 ₷</p>
+                    <p class="slider__notice">* указана оптовая цена за комплект 2,4 м</p>
+                  </div>
+                </div>
+                <div class="slider__image">
+                  <picture>
+                    <source srcset="img/slider-image.jpg 1x, img/slider-image@2x.jpg 2x,">
+                    <img src="img/slider-image.jpg" alt="Кухня Глетчер">
+                  </picture>
+                </div>
+              </a>
+            </div>
+          </div>
+          <span class="slider__btn slider__btn--prev" aria-label="предыдущий слайд"></span>
+          <span class="slider__btn slider__btn--next" aria-label="следующий слайд"></span>
+        </div>
+        <section class="hit">
+          <h2 class="hit__title">Хиты продаж</h2>
+          <div class="slider">
+            <div class="slider__outer">
+              <div class="slider__inner">
+                <div class="slider__item">
+                  <a href="#" class="card">
+                    <div class="card__wrap">
+                      <div class="card__img">
+                        <picture>
+                          <source srcset="img/hit-image-1.jpg 1x, img/hit-image-1@2x.jpg 2x">
+                          <img src="img/hit-image-1.jpg" alt="Фьюжн-03">
+                        </picture>
+                      </div>
+                      <div class="card__item-wrap">
+                        <span class="card__name">Фьюжн-03</span>
+                        <span class="card__price">33582.-</span>
+                      </div>
+                      <div class="card__item-wrap">
+                        <span class="card__sizes">В×Ш×Г: 2140×2600×600</span>
+                        <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+                      </div>
+                      <button class="btn"><span class="icon-basket"></span>В корзину</button>
+                      <button class="btn btn--outline">Быстрый просмотр</button>
+                    </div>
+                  </a>
+                </div>
+                <div class="slider__item">
+                  <a href="#" class="card">
+                    <div class="card__wrap">
+                      <div class="card__img">
+                        <picture>
+                          <source srcset="img/hit-image-2.jpg 1x, img/hit-image-2@2x.jpg 2x">
+                          <img src="img/hit-image-2.jpg" alt="Лoфт-03">
+                        </picture>
+                      </div>
+                      <div class="card__item-wrap">
+                        <span class="card__name">Лoфт-03</span>
+                        <span class="card__price">13989.-</span>
+                      </div>
+                      <div class="card__item-wrap">
+                        <span class="card__sizes">В×Ш×Г: 2024×2000×382</span>
+                        <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+                      </div>
+                      <button class="btn"><span class="icon-basket"></span>В корзину</button>
+                      <button class="btn btn--outline">Быстрый просмотр</button>
+                    </div>
+                  </a>
+                </div>
+                <div class="slider__item">
+                  <a href="#" class="card">
+                    <div class="card__wrap">
+                      <div class="card__img">
+                        <picture>
+                          <source srcset="img/hit-image-3.jpg 1x, img/hit-image-3@2x.jpg 2x">
+                          <img src="img/hit-image-3.jpg" alt="Фьюжн-04">
+                        </picture>
+                      </div>
+                      <div class="card__item-wrap">
+                        <span class="card__name">Фьюжн-04</span>
+                        <span class="card__price">34754.-</span>
+                      </div>
+                      <div class="card__item-wrap">
+                        <span class="card__sizes">В×Ш×Г: 2140×2000/2790×600</span>
+                        <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+                      </div>
+                      <button class="btn"><span class="icon-basket"></span>В корзину</button>
+                      <button class="btn btn--outline">Быстрый просмотр</button>
+                    </div>
+                  </a>
+                </div>
+                <div class="slider__item">
+                  <a href="#" class="card">
+                    <div class="card__wrap">
+                      <div class="card__img">
+                        <picture>
+                          <source srcset="img/hit-image-4.jpg 1x, img/hit-image-4@2x.jpg 2x">
+                          <img src="img/hit-image-4.jpg" alt="Шкаф-купе D3-06">
+                        </picture>
+                      </div>
+                      <div class="card__item-wrap">
+                        <span class="card__name">Шкаф-купе D3-06</span>
+                        <span class="card__price">23007.-</span>
+                      </div>
+                      <div class="card__item-wrap">
+                        <span class="card__sizes">В×Ш×Г: 2200×2100×600</span>
+                        <span class="card__reteil"><span class="icon-info"></span>розничная цена</span>
+                      </div>
+                      <button class="btn"><span class="icon-basket"></span>В корзину</button>
+                      <button class="btn btn--outline">Быстрый просмотр</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <span class="slider__btn slider__btn--prev" aria-label="предыдущий слайд"></span>
+            <span class="slider__btn slider__btn--next" aria-label="следующий слайд"></span>
+          </div>
+        </section>
+        <section class="news">
+          <div class="container">
+            <h2 class="news__title">Новости</h2>
+            <div class="slider">
+              <div class="slider__outer">
+                <div class="slider__inner">
+                  <div class="slider__item">
+                    <h3 class="news__item-title">Распродажа</h3>
+                      <p class="news__text">Уважаемые клиенты! С 02.08.2019 объявляем распродажу на торцевые ручки мод. <a href="#" class="link">Т-1</a> в цвете Полированная нержавеющая сталь. Все подробности <a href="#" class="link">здесь</a>.
+                      </p>
+                      <span class="news__date">2 августа 2019</span>
+                  </div>
+                  <div class="slider__item">
+                    <h3 class="news__item-title">Новинка! Шаблон для изготовления радиусной столешницы</h3>
+                    <p class="news__text">Уважаемые клиенты! На склад поступил шаблон для изготовления радиусной столешницы «Bravo»
+                    </p>
+                    <span class="news__date">2 августа 2019</span>
+                  </div>
+                  <div class="slider__item">
+                    <h3 class="news__item-title">Изменение цен</h3>
+                    <p class="news__text">Уважаемые клиенты! С 05.08.2019 изменятся оптовые цены на <a href="#" class="link">столешницы</a> толщиной 38 мм в цвете Дуб натуральный и комплектующие к ним. Все подробности <a href="#" class="link">здесь</a>.
+                    </p>
+                    <span class="news__date">1 августа 2019</span>
+                  </div>
+                  <div class="slider__item">
+                    <h3 class="news__item-title">Новинка! Кухня «Глетчер»</h3>
+                    <p class="news__text">Уважаемые клиенты! На склад поступила новая модульная кухня <a href="#" class="link">«Глетчер»</a> в цвете <a href="#" class="link">Гейнсборо Силк</a> и <a href="#" class="link">Маренго Силк</a>.
+                    </p>
+                    <span class="news__date">2 августа 2019</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="news__subscribe link">Подписаться <span class="tablet-hide">на новости</span></a>
+            <a href="#" class="news__all link">Все новости</a>
+            <ul class="bullets">
+              <li class="bullets__item bullets__item--active"></li>
+              <li class="bullets__item"></li>
+              <li class="bullets__item"></li>
+              <li class="bullets__item"></li>
+            </ul>
+          </div>
+        </section>
+        <section class="advantages">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <span class="icon-like"></span>
+              <p class="advantages__title">Мебель, которую покупают и рекомендуют друзьям</p>
+              <p class="advantages__text">Мы производим корпусную мебель уже много лет и точно знаем, как выпускать востребованную качественную продукцию по самой выгодной для покупателя цене.</p>
+            </li>
+            <li class="advantages__item">
+              <span class="icon-circle"></span>
+              <p class="advantages__title">Заботимся о каждом клиенте и заказе</p>
+              <p class="advantages__text">Мы производим корпусную мебель уже много лет и точно знаем, как выпускать востребованную качественную продукцию по самой выгодной для покупателя цене.</p>
+            </li>
+            <li class="advantages__item">
+              <span class="icon-hand2"></span>
+              <p class="advantages__title">Предлагаем <br> лучшие цены</p>
+              <p class="advantages__text">Мы производим корпусную мебель уже много лет и точно знаем, как выпускать востребованную качественную продукцию по самой выгодной для покупателя цене.</p>
+            </li>
+            <li class="advantages__item">
+              <span class="icon-rocket"></span>
+              <p class="advantages__title">Обучаем и развиваем ваших сотрудников</p>
+              <p class="advantages__text">Мы производим корпусную мебель уже много лет и точно знаем, как выпускать востребованную качественную продукцию по самой выгодной для покупателя цене.</p>
+            </li>
+            <li class="advantages__item advantages__item--video">
+              <div class="advantages__item-wrap">
+                <span class="icon-play"></span>
+                <picture>
+                  <source srcset="img/video-preview.jpg 1x, img/video-preview@2x.jpg 2x">
+                  <img src="img/video-preview.jpg" alt="video">
+                </picture>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <span class="icon-target"></span>
+              <p class="advantages__title">Персональный подход к каждому клиенту</p>
+              <p class="advantages__text">Мы производим корпусную мебель уже много лет и точно знаем, как выпускать востребованную качественную продукцию по самой выгодной для покупателя цене.</p>
+            </li>
+            <li class="advantages__item">
+              <span class="icon-list"></span>
+              <p class="advantages__title">Самое необходимое <br> всегда в наличии</p>
+              <p class="advantages__text">Мы производим корпусную мебель уже много лет и точно знаем, как выпускать востребованную качественную продукцию по самой выгодной для покупателя цене.</p>
+            </li>
+            <li class="advantages__item">
+              <span class="icon-constructor-1"></span>
+              <p class="advantages__title">Удобный и практичный онлайн–конструктор кухни</p>
+              <p class="advantages__text">Мы производим корпусную мебель уже много лет и точно знаем, как выпускать востребованную качественную продукцию по самой выгодной для покупателя цене.</p>
+            </li>
+            <li class="advantages__item">
+              <span class="icon-graph"></span>
+              <p class="advantages__title">Активно поддерживаем ваши продажи</p>
+              <p class="advantages__text">Мы производим корпусную мебель уже много лет и точно знаем, как выпускать востребованную качественную продукцию по самой выгодной для покупателя цене.</p>
+            </li>
+          </ul>
+        </section>
+        <section class="info">
+          <div class="container">
+            <div class="info__wrap">
+              <p class="info__email">spb@mebeloptom.com</p>
+              <p class="info__request">Оставьте <a href="#" class="link">заявку на сотрудничество</a> или обращайтесь за бесплатной консультацией по телефону</p>
+              <p class="info__phone">+7 (812) 770-60-70</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="container">
+          <div class="page-footer__top">
+            <div class="page-footer__col">
+              <a href="#" class="page-footer__logo">
+                <img src="img/logo.svg" alt="Bravo">
+              </a>
+            </div>
+            <div class="page-footer__col page-footer__col--active">
+              <h3 class="page-footer__title">Помощь</h3>
+              <ul class="page-footer__list">
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Каталог продукции</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Читать новости</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Подписаться на новости</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Как с нами работать</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Рекламные материалы</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Для интернет-магазинов</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Политика конфиденциальности</a></li>
+              </ul>
+            </div>
+            <div class="page-footer__col">
+              <h3 class="page-footer__title">Полезное</h3>
+              <ul class="page-footer__list">
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Прайс-листы(опт)</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Схемы сборки</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Сертификаты</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Скачать каталог мебели</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Техническая информация</a></li>
+              </ul>
+            </div>
+            <div class="page-footer__col">
+              <h3 class="page-footer__title">Контакты</h3>
+              <ul class="page-footer__list">
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Наш адрес и телефоны</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Письмо директору</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Книга предложений</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Поставщикам</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Купить двери</a></li>
+              </ul>
+            </div>
+            <div class="page-footer__col">
+              <p class="page-footer__phone">+7 (812) 770-60-70</p>
+              <div class="page-footer__wrap">
+                <p class="page-footer__text">Вы не оптовик?</p>
+                <a href="#" class="page-footer__retail-link">Купить в розницу</a>
+              </div>
+
+              <a href="#" class="btn">Стать дилером</a>
+            </div>
+          </div>
+          <div class="page-footer__bottom">
+            <p class="page-footer__info">Внимание! Данный сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями части 2 статьи 437 ГК РФ. Цвет продукции, представленной на сайте может отличаться от реального, в связи с различными настройками ваших устройств для просмотра.</p>
+            <p class="page-footer__copyright">
+              <span class="page-footer__copyright-item">© 2019. Фабрика мебели «Виват»</span>
+              <span class="page-footer__copyright-item">Все права защищены.</span>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+.count-btn {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $light-gray;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &--minus {
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 2px;
+      background-color: $dark-gray;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  &--plus {
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 2px;
+      background-color: $dark-gray;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 10px;
+      background-color: $dark-gray;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  &:hover {
+    background-color: $hover-input-bg;
+  }
+
+  &:active {
+    background-color: $active-input-bg;
+  }
+}

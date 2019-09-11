@@ -1,0 +1,93 @@
+.blueprints {
+  padding-bottom: 73px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 48px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 42px;
+  }
+}
+
+.blueprints__title {
+  margin: 0 0 9px 0;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.blueprints__wrap {
+  padding-top: 48px;
+  padding-bottom: 39px;
+  border-bottom: 1px solid $gray;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 18px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.blueprints__subtitle {
+  margin: 0 0 48px 0;
+  font-size: 24px;
+  line-height: 30px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.blueprints__list {
+  @include list-style-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blueprints__item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 22px;
+  padding-right: 40px;
+  width: 25%;
+  margin-bottom: 30px;
+
+  @media (max-width: 1300px) {
+    width: 33.3%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  & .link {
+    position: relative;
+    margin-bottom: 10px;
+
+    & span {
+      position: absolute;
+      left: -26px;
+    }
+  }
+}
+
+.blueprints__text {
+  font-size: 14px;
+  color: $dark-gray;
+}
