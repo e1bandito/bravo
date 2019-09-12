@@ -76,8 +76,8 @@
 
 .page-footer__logo {
   display: block;
-  width: 137px;
-  height: 55px;
+  width: 146px;
+  height: 48px;
 
   @media (max-width: 1300px) {
     width: 102px;
@@ -152,7 +152,7 @@
   transition: color 0.3s;
 
   &:hover {
-    color: $red;
+    color: $dark-yellow;
   }
 }
 
@@ -204,17 +204,17 @@
 .page-footer__retail-link {
   display: block;
   line-height: 18px;
-  color: $red;
+  color: $dark-yellow;
   transition: opacity 0.3s;
   margin-bottom: 44px;
 
   &:hover {
     text-decoration: underline;
-    color: $light-red;
+    color: $yellow;
   }
 
   &:active {
-    color: $dark-red;
+    color: $light-yellow;
   }
 }
 

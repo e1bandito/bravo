@@ -1,0 +1,100 @@
+.team {
+  padding-top: 48px;
+  padding-bottom: 125px;
+}
+
+.team__title {
+  margin: 0 0 60px 0;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+}
+
+.team__list {
+  @include list-style-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 34px;
+  margin-bottom: 70px;
+}
+
+.team__link img {
+  display: block;
+}
+
+.team__promo {
+  border: 1px solid $gray;
+  border-radius: 4px;
+  padding: 20px 0 20px 54px;
+  display: flex;
+  align-items: center;
+}
+
+.team__promo-logo {
+  width: 137px;
+  height: 55px;
+  margin-right: 68px;
+
+  & img {
+    display: block;
+  }
+}
+
+.team__promo-link {
+  font-size: 24px;
+  color: $black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.team__promo-list {
+  @include list-style-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  width: 740px;
+  min-height: 98px;
+}
+
+.team__promo-item {
+  width: 33%;
+  display: flex;
+  align-items: center;
+
+  & span {
+    font-size: 36px;
+    margin-right: 28px;
+
+    &::before {
+      margin: 0;
+    }
+  }
+
+  & .icon-sofa {
+    font-size: 25px;
+    margin-right: 39px;
+  }
+
+  & .icon-bedroom {
+    font-size: 30px;
+    margin-right: 34px;
+  }
+}
+
+.team__promo-item-link {
+  font-size: 18px;
+  line-height: 1;
+  color: $black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

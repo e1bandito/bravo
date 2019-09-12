@@ -1,17 +1,11 @@
 .slider {
   position: relative;
   overflow: hidden;
-  margin-left: 16px;
-  margin-right: 16px;
-
-  @media (max-width: 700px) {
-    margin: 0;
-  }
 
   &--main {
     position: relative;
     height: 480px;
-    background-color: $bg-black;
+    background-color: $yellow;
     margin-left: 0;
     margin-right: 0;
 
@@ -27,25 +21,11 @@
     .slider__info {
       position: relative;
       flex: 1;
-      padding-top: 120px;
+      padding-top: 96px;
       padding-bottom: 43px;
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      &::after {
-        position: absolute;
-        content: "";
-        right: -45px;
-        top: -1px;
-        display: block;
-        height: 100%;
-        width: 47px;
-        background-image: url("../img/triangle.svg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center center;
-      }
     }
 
     .slider__info-wrap {
@@ -61,8 +41,10 @@
     }
 
     .slider__image {
-      width: 50%;
-      height: 480px;
+      width: 762px;
+      height: 412px;
+      margin-right: 48px;
+      margin-top: 68px;
 
       & img {
         display: block;
@@ -74,27 +56,29 @@
 
     .slider__text {
       margin: 0 0 20px 0;
-      font-size: 36px;
+      font-size: 24px;
       line-height: 1;
       color: $white;
     }
 
     .slider__title {
-      margin: 0 0 30px 0;
+      width: 255px;
+      margin: 0 0 5px 0;
       font-size: 60px;
-      line-height: 1;
-      color: $white;
+      line-height: 72px;
+      color: $black;
+      text-transform: uppercase;
     }
 
     .slider__price {
       display: inline-block;
       margin: 0;
-      padding: 18px 25px;
+      padding: 16px 16px 15px;
       font-size: 36px;
       line-height: 1;
       font-weight: 700;
       color: $white;
-      background-color: $red;
+      background-color: $black;
     }
 
     .slider__notice {
@@ -111,9 +95,9 @@
       width: 36px;
       height: 36px;
       border-radius: 50%;
-      background-color: $red;
+      background-color: $yellow;
       cursor: pointer;
-      transition: opacity 0.3s;
+      transition: background-color 0.3s;
 
       &--prev {
         top: 0;
@@ -174,14 +158,18 @@
       }
 
       &:hover {
-        opacity: 0.8;
+        background-color: $dark-yellow;
+      }
+
+      &:active {
+        background-color: $light-yellow;
       }
     }
   }
 }
 
 .slider__outer {
-  padding: 40px 16px;
+  padding: 40px 48px;
 
   @media (max-width: $desktop-width) {
     padding: 40px 0;
@@ -193,19 +181,11 @@
 }
 
 .slider__item {
-  width: calc(100% / 4);
+  width: calc(100% / 6);
   flex: 1 0 auto;
 
-  @media (max-width: 1760px) {
-    width: calc(100% / 3);
-  }
-
-  @media (max-width: 1440px) {
-    width: 50%;
-  }
-
-  @media (max-width: 600px) {
-    width: 100%;
+  @media (max-width: 1400px) {
+    width: calc(100% / 5);
   }
 }
 
@@ -215,14 +195,14 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: $red;
+  background-color: $yellow;
   cursor: pointer;
-  transition: opacity 0.3s;
+  transition: background-color 0.3s;
+  top: 150px;
   z-index: 2;
 
   &--prev {
-    top: 165px;
-    left: 12px;
+    left: 30px;
 
     @media (max-width: $desktop-width) {
       left: 0;
@@ -250,8 +230,7 @@
   }
 
   &--next {
-    top: 165px;
-    right: 12px;
+    right: 30px;
 
     @media (max-width: $desktop-width) {
       right: 0;
@@ -291,6 +270,10 @@
   }
 
   &:hover {
-    opacity: 0.8;
+    background-color: $dark-yellow;
+  }
+
+  &:active {
+    background-color: $light-yellow;
   }
 }

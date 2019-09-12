@@ -98,6 +98,10 @@ body {
 .tablet-hide {
   display: inline-block;
 
+  &:hover {
+    text-decoration: inherit;
+  }
+
   @media (max-width: $tablet-width) {
     display: none;
   }

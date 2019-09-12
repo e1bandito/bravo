@@ -3,6 +3,7 @@
   width: 300px;
   min-height: 100vh;
   box-shadow: 0 0 64px #e4e6eb;
+  z-index: 3;
 
   @media (max-width: 1200px) {
     width: 250px;

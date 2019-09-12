@@ -5,7 +5,7 @@
 }
 
 .page-header__top {
-  background-color: $light-gray;
+  border-bottom: 1px solid $gray;
 
   & .container {
     display: flex;
@@ -44,7 +44,7 @@
   align-items: center;
 
   & span {
-    color: $red;
+    color: $yellow;
     font-size: 14px;
     margin-right: 8px;
 
@@ -54,7 +54,7 @@
   }
 
   &:hover {
-    color: $red;
+    color: $yellow;
   }
 }
 
@@ -75,7 +75,7 @@
 
 .page-header__link {
   line-height: 18px;
-  color: $red;
+  color: $dark-yellow;
   margin-left: 5px;
   transition: color 0.3s;
 
@@ -85,11 +85,11 @@
 
   &:hover {
     text-decoration: underline;
-    color: $light-red;
+    color: $dark-yellow;
   }
 
   &:active {
-    color: $dark-red;
+    color: $light-yellow;
   }
 }
 
@@ -107,7 +107,7 @@
   align-items: center;
 
   & span {
-    color: $red;
+    color: $dark-yellow;
     margin-right: 16px;
 
     &::before {
@@ -136,7 +136,7 @@
 }
 
 .page-header__basket {
-  color: $red;
+  color: $dark-yellow;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
@@ -174,7 +174,7 @@
   }
 
   & span {
-    color: $red;
+    color: $dark-yellow;
     font-size: 17px;
 
     &::before {
