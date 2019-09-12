@@ -744,6 +744,10 @@ body {
   text-decoration: inherit;
 }
 
+.through {
+  text-decoration: line-through;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -2341,13 +2345,6 @@ a {
   text-align: center;
 }
 
-.news-page__subscribe {
-  margin: 0;
-  position: absolute;
-  top: 55px;
-  right: 48px;
-}
-
 .news-page__list {
   padding: 0;
   margin: 0;
@@ -2404,7 +2401,7 @@ a {
   line-height: 24px;
 }
 
-.news-page__text:last-of-type {
+.news-page__text:last-child {
   margin-bottom: 0;
 }
 
@@ -2415,7 +2412,7 @@ a {
 }
 
 .news-page__download span {
-  color: #ec1414;
+  color: #ffcc00;
   margin-right: 10px;
 }
 
@@ -2426,18 +2423,31 @@ a {
 }
 
 .news-page__more {
-  margin: 0;
+  margin: 0 0 94px 0;
   text-align: center;
-  color: #ec1414;
+  color: #ff9000;
   cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .news-page__more:hover {
-  color: #fd3844;
+  color: #ffcc00;
 }
 
 .news-page__more:active {
-  color: #dc1d29;
+  color: #ffd21e;
+}
+
+.news-page__subtitle {
+  margin: 0;
+  line-height: 24px;
+}
+
+.news-page__sublist {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .news {
@@ -4576,6 +4586,50 @@ a {
   margin-left: auto;
 }
 
+.subscribe {
+  padding: 44px 30px;
+  -webkit-box-shadow: 0 16px 48px #e4e6eb;
+  box-shadow: 0 16px 48px #e4e6eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe .field__input {
+  width: 350px;
+  margin-top: 0;
+  margin-right: 24px;
+}
+
+.subscribe .btn {
+  width: 350px;
+  font-size: 14px;
+}
+
+.subscribe__title {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.subscribe__text {
+  margin: 0;
+  line-height: 22px;
+}
+
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.subscribe__wrap {
+  margin-right: 125px;
+}
+
 .tabs__buttons {
   padding: 0;
   margin: 0;
@@ -5294,10 +5348,6 @@ a {
 
   .news-page {
     padding-top: 48px;
-  }
-
-  .news-page__subscribe {
-    right: 24px;
   }
 
   .news-page__col {
@@ -6076,13 +6126,6 @@ a {
   .news-page__title {
     font-size: 24px;
     line-height: 30px;
-  }
-
-  .news-page__subscribe {
-    position: relative;
-    right: auto;
-    top: auto;
-    text-align: center;
   }
 
   .news-page__list {
