@@ -44,7 +44,7 @@
 
 .contacts__wrap {
   flex: 1;
-  margin-right: 80px;
+  margin-right: 48px;
 
   @media (max-width: $desktop-width) {
     margin-right: 40px;
@@ -85,7 +85,9 @@
 .contacts__storage-info {
   margin: 0 0 44px 0;
   line-height: 20px;
-  color: $red;
+  border-radius: 4px;
+  background-color: $light-gray;
+  padding: 20px 118px 20px 33px;
 
   @media (max-width: $tablet-width) {
     font-size: 14px;
@@ -119,6 +121,7 @@
 
 .contacts__schedule {
   padding-top: 28px;
+  margin-bottom: 48px;
 }
 
 .contacts__schedule-title {
@@ -204,7 +207,7 @@
   margin: 0;
   font-size: 18px;
   line-height: 24px;
-  color: $red;
+  color: $dark-yellow;
 
   @media (max-width: $desktop-width) {
     font-size: 16px;
@@ -399,4 +402,27 @@
 .contacts__partners-phone {
   margin: 0;
   line-height: 24px;
+}
+
+.contacts__link {
+  color: $dark-yellow;
+  margin-right: 35px;
+
+  &:hover {
+    color: $yellow;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $light-yellow;
+  }
+
+  & span {
+    font-size: 14px;
+    margin-right: 10px;
+
+    &::before {
+      margin: 0;
+    }
+  }
 }
