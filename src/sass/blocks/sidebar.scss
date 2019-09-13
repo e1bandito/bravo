@@ -129,8 +129,8 @@
       top: 24px;
       width: 8px;
       height: 8px;
-      border-right: 2px solid $red;
-      border-bottom: 2px solid $red;
+      border-right: 2px solid $dark-yellow;
+      border-bottom: 2px solid $dark-yellow;
       transform: rotate(-45deg);
     }
   }
@@ -141,7 +141,7 @@
 
   & > span {
     font-size: 36px;
-    margin-right: 25px;
+    margin-right: 20px;
     transition: color 0.3s;
 
     &::before {
