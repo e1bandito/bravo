@@ -111,19 +111,3 @@
     }
   }
 }
-
-.card__budge {
-  position: absolute;
-  display: block;
-  font-size: 10px;
-  color: $black;
-  line-height: 1;
-  font-weight: 700;
-  border-radius: 10px;
-  padding: 6px 12px 4px;
-  text-transform: uppercase;
-  background-color: $yellow;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-}

@@ -4,30 +4,79 @@
 
 .radio__label {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   border: 1px solid $gray;
   border-radius: 4px;
   cursor: pointer;
 
-  @media (max-width: $tablet-width) {
-    width: 32px;
-    height: 32px;
+  &--light-pink {
+    background-image: url("../img/light-pink.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/light-pink@2x.png");
+    }
   }
 
-  &--gray {
-    background-color: $product-gray;
+  &--dark-brown {
+    background-image: url("../img/dark-brown.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/dark-brown@2x.png");
+    }
   }
 
-  &--brown {
-    background-color: $product-brown;
+  &--light-gray {
+    background-image: url("../img/light-gray.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/light-gray@2x.png");
+    }
   }
 
-  &--black {
-    background-color: $darkest-gray;
+  &--lightest-gray {
+    background-image: url("../img/lightest-gray.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/lightest-gray@2x.png");
+    }
+  }
+
+  &--brown-beige {
+    background-image: url("../img/brown-beige.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/brown-beige@2x.png");
+    }
+  }
+
+  &--brown-black {
+    background-image: url("../img/brown-black.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/brown-black@2x.png");
+    }
   }
 }
 
 .radio__input:checked ~ .radio__label {
-  border-color: $red;
+  border-color: $dark-yellow;
 }

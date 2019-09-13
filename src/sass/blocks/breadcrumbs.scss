@@ -52,7 +52,11 @@
   }
 
   &:hover {
-    color: $red;
+    color: $dark-yellow;
+  }
+
+  &:active {
+    color: $yellow;
   }
 }
 

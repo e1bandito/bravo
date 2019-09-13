@@ -15,6 +15,20 @@
       top: 237px;
     }
   }
+
+  &--other {
+    border-top: 1px solid $gray;
+
+    & .slider__btn {
+      top: 237px;
+    }
+
+    & .link--other {
+      position: absolute;
+      top: 48px;
+      right: 48px;
+    }
+  }
 }
 
 .product-slider__title {
