@@ -48,6 +48,7 @@
 }
 
 .card__img {
+  position: relative;
   width: 110px;
   height: 220px;
   margin-bottom: 30px;
@@ -55,7 +56,8 @@
   & img {
     display: block;
     height: 100%;
-    object-fit: fill;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -108,4 +110,20 @@
       margin: 0;
     }
   }
+}
+
+.card__budge {
+  position: absolute;
+  display: block;
+  font-size: 10px;
+  color: $black;
+  line-height: 1;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 6px 12px 4px;
+  text-transform: uppercase;
+  background-color: $yellow;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
 }

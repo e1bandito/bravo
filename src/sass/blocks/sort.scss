@@ -176,7 +176,7 @@
   box-shadow: none;
   background-color: transparent;
   cursor: pointer;
-  color: $red;
+  color: $dark-yellow;
   outline: none;
   margin-left: 20px;
 
@@ -186,11 +186,11 @@
   }
 
   &:hover {
-    color: $light-red;
+    color: $yellow;
   }
 
   &:active {
-    color: $dark-red;
+    color: $light-yellow;
   }
 }
 
