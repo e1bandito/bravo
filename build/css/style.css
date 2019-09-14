@@ -1831,6 +1831,85 @@ a {
   background-color: #dfe3e8;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown__placeholder {
+  line-height: 17px;
+  font-weight: 700;
+  color: #000000;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown__placeholder span {
+  color: #ffcc00;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.dropdown__placeholder span::before {
+  margin: 0;
+}
+
+.dropdown__placeholder:hover {
+  color: #ff9000;
+}
+
+.dropdown__list {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 180px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 48px #e4e6eb;
+  box-shadow: 0 0 48px #e4e6eb;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  z-index: 5;
+}
+
+.dropdown__list::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  left: 24px;
+  top: -4px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #ffffff;
+}
+
+.dropdown__list--active {
+  display: block;
+}
+
+.dropdown__item {
+  line-height: 18px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  padding: 9px 23px;
+}
+
+.dropdown__item:hover {
+  color: #ff9000;
+}
+
 .field__label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2443,34 +2522,6 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.page-header__geoposition {
-  line-height: 17px;
-  font-weight: 700;
-  color: #000000;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.page-header__geoposition span {
-  color: #ffcc00;
-  font-size: 14px;
-  margin-right: 8px;
-}
-
-.page-header__geoposition span::before {
-  margin: 0;
-}
-
-.page-header__geoposition:hover {
-  color: #ffcc00;
 }
 
 .page-header__phone {

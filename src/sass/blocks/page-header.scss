@@ -35,29 +35,6 @@
   }
 }
 
-.page-header__geoposition {
-  line-height: 17px;
-  font-weight: 700;
-  color: $black;
-  transition: color 0.3s;
-  display: flex;
-  align-items: center;
-
-  & span {
-    color: $yellow;
-    font-size: 14px;
-    margin-right: 8px;
-
-    &::before {
-      margin: 0;
-    }
-  }
-
-  &:hover {
-    color: $yellow;
-  }
-}
-
 .page-header__phone {
   margin-left: auto;
   line-height: 18px;
