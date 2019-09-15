@@ -1,6 +1,8 @@
 .btn {
   width: 160px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   line-height: 18px;
   padding: 8px 24px 8px;

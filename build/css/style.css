@@ -966,7 +966,15 @@ a {
 
 .btn {
   width: 160px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 4px;
   line-height: 18px;
   padding: 8px 24px 8px;
@@ -1833,6 +1841,7 @@ a {
 
 .dropdown {
   position: relative;
+  z-index: 10;
 }
 
 .dropdown__placeholder {
@@ -2083,7 +2092,31 @@ a {
   margin-right: 0;
 }
 
+.main-nav__item {
+  position: relative;
+}
+
+.main-nav__item--dropdown > .main-nav__link {
+  padding-right: 20px;
+}
+
+.main-nav__item--dropdown > .main-nav__link::after {
+  content: "";
+  position: absolute;
+  right: 2px;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+}
+
 .main-nav__link {
+  position: relative;
   font-size: 18px;
   line-height: 1;
   color: #000000;
@@ -2095,12 +2128,77 @@ a {
   color: #ff9000;
 }
 
+.main-nav__link:hover::after {
+  border-color: #ff9000;
+}
+
 .main-nav__link--active {
   font-weight: 700;
 }
 
 .main-nav__link--active:hover {
   color: #000000;
+}
+
+.main-nav__dropdown {
+  max-width: 1530px;
+  width: 78vw;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  background-color: #ffffff;
+  z-index: 5;
+  padding: 48px 48px 28px;
+  display: none;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 0 0 48px #e4e6eb;
+  box-shadow: 0 0 48px #e4e6eb;
+}
+
+.main-nav__dropdown--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-nav__dropdown .btn {
+  width: 220px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.main-nav__title {
+  margin: 0;
+  font-size: 12px;
+  line-height: 30px;
+  color: #8c9199;
+  text-transform: uppercase;
+}
+
+.main-nav__col {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.main-nav__sublist {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav__subitem-link {
+  line-height: 30px;
+  color: #000000;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.main-nav__subitem-link:hover {
+  color: #ff9000;
 }
 
 .news-page {
@@ -4532,6 +4630,10 @@ a {
 }
 
 @media (max-width: 1760px) {
+  .main-nav__dropdown {
+    width: 60vw;
+  }
+
   .product__links {
     width: 100%;
     -webkit-box-orient: horizontal;

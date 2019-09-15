@@ -64,7 +64,14 @@
   <header class="page-header">
     <div class="page-header__top">
       <div class="container">
-        <a href="#" class="page-header__geoposition"><span class="icon-pin"></span>Москва</a>
+        <div class="dropdown">
+          <span class="dropdown__placeholder"><span class="icon-pin"></span>Москва</span>
+          <ul class="dropdown__list">
+            <li class="dropdown__item">Санкт-Петербург</li>
+            <li class="dropdown__item">Нижний Новгород</li>
+            <li class="dropdown__item">Рязань</li>
+          </ul>
+        </div>
         <span class="page-header__phone">+7 (812) 770-60-70</span>
         <span class="page-header__info">Вы не оптовик?</span>
         <a href="#" class="page-header__link">Купить в розницу</a>
@@ -76,7 +83,7 @@
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#" class="main-nav__link">Дилерам</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">Прайс-листы</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-листы</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Как с нами работать </a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
           </ul>
@@ -85,7 +92,7 @@
           <a href="#" class="page-header__logo">
             <img src="img/logo.svg" alt="Фабрика дверей Bravo">
           </a>
-          <div class="page-header__hamburger">
+          <div class="page-header__hamburger page-header__hamburger--open">
             <span></span>
           </div>
         </div>

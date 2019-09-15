@@ -64,7 +64,14 @@
   <header class="page-header">
     <div class="page-header__top">
       <div class="container">
-        <a href="#" class="page-header__geoposition"><span class="icon-pin"></span>Москва</a>
+        <div class="dropdown">
+          <span class="dropdown__placeholder"><span class="icon-pin"></span>Москва</span>
+          <ul class="dropdown__list">
+            <li class="dropdown__item">Санкт-Петербург</li>
+            <li class="dropdown__item">Нижний Новгород</li>
+            <li class="dropdown__item">Рязань</li>
+          </ul>
+        </div>
         <span class="page-header__phone">+7 (812) 770-60-70</span>
         <span class="page-header__info">Вы не оптовик?</span>
         <a href="#" class="page-header__link">Купить в розницу</a>
@@ -78,14 +85,14 @@
             <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-листы</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Как с нами работать </a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">Контакты</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
           </ul>
         </nav>
         <div class="page-header__wrap">
           <a href="#" class="page-header__logo">
             <img src="img/logo.svg" alt="Фабрика дверей Bravo">
           </a>
-          <div class="page-header__hamburger">
+          <div class="page-header__hamburger page-header__hamburger--open">
             <span></span>
           </div>
         </div>
@@ -107,136 +114,66 @@
 
       <div class="contacts__tabs tabs">
         <ul class="tabs__buttons">
-          <li class="tabs__btn tabs__btn--active">Оптовый склад</li>
-          <li class="tabs__btn">Наши партнёры (розница)</li>
+          <li class="tabs__btn">Оптовый склад</li>
+          <li class="tabs__btn tabs__btn--active">Наши партнёры (розница)</li>
         </ul>
         <ul class="tabs__content">
-          <li class="tabs__content-item tabs__content-item--active">
-            <div class="contacts__storage">
-              <div class="contacts__wrap">
-                <h2 class="contacts__storage-title">Региональный оптовый склад "BRAVO" г. Санкт-Петербург</h2>
-                <p class="contacts__storage-info">Филиал "Санкт–Петербург" является обособленным складским подразделением с оперативной логистикой продукции с центрального склада г. Москва. Все товары, представленные на сайте, доступны для заказа в соответствии с их статусами.</p>
-                <p class="contacts__storage-phone">+7 (812) 770-60-70</p>
-                <p class="contacts__storage-mail">spb@dveri.com</p>
-                <p class="contacts__storage-address"><span class="contacts__storage-town">г. Санкт-Петербург,</span><span class="contacts__storage-street"> ул. Кубинская д. 82, корп. 1</span></p>
-                <div class="contacts__schedule">
-                  <h3 class="contacts__schedule-title">График работы</h3>
-                  <p class="contacts__schedule-text">пн.-пт.: с 9.00 до 18.00</p>
-                  <p class="contacts__schedule-text">сб.-вс.: выходной</p>
-                </div>
-                <div class="contacts__links">
-                  <a href="#" class="contacts__link"><span class="icon-mail"></span>Письмо директору</a>
-                  <a href="#" class="contacts__link"><span class="icon-provider"></span>Поставщикам</a>
-                  <a href="#" class="contacts__link"><span class="icon-book"></span>Книга предложений</a>
-                </div>
-              </div>
-              <div class="contacts__map">
-                <picture>
-                    <source srcset="img/map.jpg 1x, img/map@2x.jpg 2x">
-                    <img src="img/map.jpg" alt="Региональный оптовый склад">
-                </picture>
-              </div>
-            </div>
-            <div class="contacts__employees">
-              <div class="container">
-                <h2 class="contacts__subtitle">Наши сотрудники</h2>
-                <div class="contacts__employees-row">
-                  <div class="contacts__employees-col">
-                    <div class="contacts__employees-item">
-                      <p class="contacts__employees-name">Стеля Владимир</p>
-                      <p class="contacts__employees-position">Директор обособленного подразделения</p>
-                    </div>
-                  </div>
-                  <div class="contacts__employees-col">
-                    <div class="contacts__employees-item">
-                      <p class="contacts__employees-name">Гаврилов Сергей</p>
-                      <p class="contacts__employees-position">Менеджер по развитию регионов</p>
-                    </div>
-                    <div class="contacts__employees-item">
-                      <p class="contacts__employees-name">Малюгин Денис</p>
-                      <p class="contacts__employees-position">Менеджер по развитию регионов</p>
-                    </div>
-                  </div>
-                  <div class="contacts__employees-col">
-                    <div class="contacts__employees-item">
-                      <p class="contacts__employees-name">Глазунова Юлия</p>
-                      <p class="contacts__employees-position">Менеджер по работе с клиентами</p>
-                    </div>
-                    <div class="contacts__employees-item">
-                      <p class="contacts__employees-name">Семениг Ирина</p>
-                      <p class="contacts__employees-position">Менеджер по работе с клиентами</p>
-                    </div>
-                    <div class="contacts__employees-item">
-                      <p class="contacts__employees-name">Шитова Любовь</p>
-                      <p class="contacts__employees-position">Менеджер по работе с клиентами</p>
-                    </div>
-                  </div>
-                  <div class="contacts__employees-col">
-                    <div class="contacts__employees-item">
-                      <p class="contacts__employees-name">Гаврилова Юлия</p>
-                      <p class="contacts__employees-position">Офис-менеджер</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="contacts__photo">
-              <div class="container">
-                <h3 class="contacts__subtitle">Наш склад</h3>
-                <ul class="contacts__photo-list">
-                  <li class="contacts__photo-item">
-                    <div class="contacts__photo-img">
-                      <picture>
-                        <source srcset="img/storage-1.jpg 1x, img/storage-1@2x.jpg 2x">
-                        <img src="img/storage-1.jpg" alt="Склад">
-                      </picture>
-                    </div>
-                  </li>
-                  <li class="contacts__photo-item">
-                    <div class="contacts__photo-img">
-                      <picture>
-                        <source srcset="img/storage-2.jpg 1x, img/storage-2@2x.jpg 2x">
-                        <img src="img/storage-2.jpg" alt="Склад">
-                      </picture>
-                    </div>
-                  </li>
-                  <li class="contacts__photo-item">
-                    <div class="contacts__photo-img">
-                      <picture>
-                        <source srcset="img/storage-3.jpg 1x, img/storage-3@2x.jpg 2x">
-                        <img src="img/storage-3.jpg" alt="Склад">
-                      </picture>
-                    </div>
-                  </li>
-                  <li class="contacts__photo-item">
-                    <div class="contacts__photo-img">
-                      <picture>
-                        <source srcset="img/storage-4.jpg 1x, img/storage-4@2x.jpg 2x">
-                        <img src="img/storage-4.jpg" alt="Склад">
-                      </picture>
-                    </div>
-                  </li>
-                  <li class="contacts__photo-item">
-                    <div class="contacts__photo-img">
-                      <picture>
-                        <source srcset="img/storage-5.jpg 1x, img/storage-5@2x.jpg 2x">
-                        <img src="img/storage-5.jpg" alt="Склад">
-                      </picture>
-                    </div>
-                  </li>
-                  <li class="contacts__photo-item">
-                    <div class="contacts__photo-img">
-                      <picture>
-                        <source srcset="img/storage-6.jpg 1x, img/storage-6@2x.jpg 2x">
-                        <img src="img/storage-6.jpg" alt="Склад">
-                      </picture>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
           <li class="tabs__content-item"></li>
+          <li class="tabs__content-item tabs__content-item--active">
+            <ul class="contacts__partners-list">
+              <li class="contacts__partners-item">
+                <div class="contacts__partners-col">
+                  <p class="contacts__partners-name">Магазин-склад «Bravo» на Кубинской</p>
+                  <p class="contacts__partners-address">г. Санкт-Петербург, ул. Кубинская д. 82, корп. 1</p>
+                  <a href="#" class="link">Показать на карте</a>
+                </div>
+                <div class="contacts__partners-col">
+                  <p class="contacts__partners-phone">+7 (812) 607-68-58</p>
+                  <a href="#" class="link">mebel-spb@dveribravo.ru</a>
+                  <a href="#" class="link">dveribravo.ru</a>
+                </div>
+                <div class="contacts__partners-col">
+                  <p class="contacts__partners-schedule">пн.-пт.: с 9.00 до 19.00</p>
+                  <p class="contacts__partners-schedule">сб.: с 10.00 до 18.00</p>
+                  <p class="contacts__partners-schedule">вс.: выходной</p>
+                </div>
+              </li>
+              <li class="contacts__partners-item">
+                <div class="contacts__partners-col">
+                  <p class="contacts__partners-name">Магазин-склад «Bravo» на Кубинской</p>
+                  <p class="contacts__partners-address">г. Санкт-Петербург, ул. Кубинская д. 82, корп. 1</p>
+                  <a href="#" class="link">Показать на карте</a>
+                </div>
+                <div class="contacts__partners-col">
+                  <p class="contacts__partners-phone">+7 (812) 607-68-58</p>
+                  <a href="#" class="link">mebel-spb@dveribravo.ru</a>
+                  <a href="#" class="link">dveribravo.ru</a>
+                </div>
+                <div class="contacts__partners-col">
+                  <p class="contacts__partners-schedule">пн.-пт.: с 9.00 до 19.00</p>
+                  <p class="contacts__partners-schedule">сб.: с 10.00 до 18.00</p>
+                  <p class="contacts__partners-schedule">вс.: выходной</p>
+                </div>
+              </li>
+              <li class="contacts__partners-item">
+                <div class="contacts__partners-col">
+                  <p class="contacts__partners-name">Магазин-склад «Bravo» на Кубинской</p>
+                  <p class="contacts__partners-address">г. Санкт-Петербург, ул. Кубинская д. 82, корп. 1</p>
+                  <a href="#" class="link">Показать на карте</a>
+                </div>
+                <div class="contacts__partners-col">
+                  <p class="contacts__partners-phone">+7 (812) 607-68-58</p>
+                  <a href="#" class="link">mebel-spb@dveribravo.ru</a>
+                  <a href="#" class="link">dveribravo.ru</a>
+                </div>
+                <div class="contacts__partners-col">
+                  <p class="contacts__partners-schedule">пн.-пт.: с 9.00 до 19.00</p>
+                  <p class="contacts__partners-schedule">сб.: с 10.00 до 18.00</p>
+                  <p class="contacts__partners-schedule">вс.: выходной</p>
+                </div>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
 
