@@ -3,15 +3,39 @@
   box-shadow: 0 16px 48px #e4e6eb;
   display: flex;
 
+  @media (max-width: 1600px) {
+    flex-direction: column;
+  }
+
   & .field__input {
     width: 350px;
     margin-top: 0;
     margin-right: 24px;
+
+    @media (max-width: $tablet-width) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 400px) {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  .field {
+    @media (max-width: 400px) {
+      width: 100%;
+    }
   }
 
   & .btn {
     width: 350px;
     font-size: 14px;
+
+    @media (max-width: 400px) {
+      width: 100%;
+    }
   }
 }
 
@@ -19,18 +43,39 @@
   margin: 0 0 20px 0;
   font-size: 24px;
   line-height: 1;
+
+  @media (max-width: 1600px) {
+    text-align: center;
+  }
 }
 
 .subscribe__text {
   margin: 0;
   line-height: 22px;
+
+  @media (max-width: 1600px) {
+    text-align: center;
+  }
 }
 
 .subscribe__form {
   display: flex;
   align-items: center;
+
+  @media (max-width: 1600px) {
+    justify-content: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .subscribe__wrap {
   margin-right: 125px;
+
+  @media (max-width: 1600px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }
