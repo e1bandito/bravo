@@ -18,5 +18,18 @@
 
   &--product {
     font-size: 12px;
+
+    @media (max-width: $desktop-width) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -35px;
+      font-size: 20px;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 600px) {
+      top: -15px;
+    }
   }
 }

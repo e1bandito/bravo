@@ -26,7 +26,9 @@
 .breadcrumbs__list {
   @include list-style-reset;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  width: calc(100% - 300px);
 }
 
 .breadcrumbs__item {

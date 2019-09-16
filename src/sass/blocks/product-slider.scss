@@ -23,17 +23,38 @@
       top: 237px;
     }
 
+    & .product-slider__title {
+      width: calc(100% - 330px);
+
+      @media (max-width: $tablet-width) {
+        width: 100%;
+        margin: 0;
+        padding: 0 25px;
+        text-align: center;
+      }
+    }
+
     & .link--other {
       position: absolute;
       top: 48px;
       right: 48px;
+
+      @media (max-width: $tablet-width) {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 30px;
+        top: auto;
+        right: auto;
+        left: 25px;
+      }
     }
   }
 }
 
 .product-slider__title {
-  margin: 0 0 0 48px;
+  margin: 0 48px 0;
   font-size: 24px;
+  line-height: 1.2;
 }
 
 .product-slider__info {

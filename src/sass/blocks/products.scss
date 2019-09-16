@@ -53,14 +53,22 @@
   width: calc(100% / 6);
 
   @media (max-width: 1760px) {
+    width: calc(100% / 5);
+  }
+
+  @media (max-width: 1500px) {
+    width: 25%;
+  }
+
+  @media (max-width: 1300px) {
     width: calc(100% / 3);
   }
 
-  @media (max-width: 1440px) {
-    width: 50%;
+  @media (max-width: $tablet-width) {
+    width: calc(100% / 2);
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     width: 100%;
   }
 }

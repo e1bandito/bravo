@@ -49,13 +49,9 @@
   & .select {
     margin-right: 20px;
 
-    @media (max-width: 1760px) {
+    @media (max-width: 1240px) {
       margin-right: 0;
-      width: 24%;
-    }
-
-    @media (max-width: $desktop-width) {
-      width: 32%;
+      width: 49%;
     }
 
     @media (max-width: 600px) {
