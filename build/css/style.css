@@ -2426,6 +2426,8 @@ a {
 .page-404__img img {
   display: block;
   height: calc(100vh - 180px);
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .page-404__text {
@@ -2446,11 +2448,11 @@ a {
 }
 
 .page-404__link--catalog {
-  left: 0;
+  left: 25px;
 }
 
 .page-404__link--contacts {
-  right: 0;
+  right: 25px;
 }
 
 .page-footer {
@@ -5739,6 +5741,11 @@ a {
   .news__all {
     right: 25px;
     top: 70px;
+  }
+
+  .page-404__link {
+    top: 120px;
+    font-size: 20px;
   }
 
   .page-footer {

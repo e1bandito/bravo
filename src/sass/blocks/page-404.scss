@@ -21,9 +21,13 @@
   text-align: center;
 }
 
-.page-404__img img {
-  display: block;
-  height: calc(100vh - 180px);
+.page-404__img {
+
+  & img {
+    display: block;
+    height: calc(100vh - 180px);
+    object-fit: contain;
+  }
 }
 
 .page-404__text {
@@ -38,15 +42,20 @@
   font-size: 24px;
   color: $black;
 
+  @media (max-width: $tablet-width) {
+    top: 120px;
+    font-size: 20px;
+  }
+
   &:hover {
     text-decoration: underline;
   }
 
   &--catalog {
-    left: 0;
+    left: 25px;
   }
 
   &--contacts {
-    right: 0;
+    right: 25px;
   }
 }
