@@ -98,6 +98,10 @@
   opacity: 0;
   transition: color 0.3s;
 
+  @media (max-width: $desktop-width) {
+    opacity: 1;
+  }
+
   &:hover {
     color: $yellow;
   }

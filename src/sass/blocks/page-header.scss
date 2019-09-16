@@ -17,7 +17,7 @@
 
 .page-header__bottom {
   padding-top: 38px;
-  padding-bottom: 38px;
+  padding-bottom: 23px;
 
   @media (max-width: $tablet-width) {
     padding-top: 20px;
@@ -72,6 +72,8 @@
 
 .page-header__user-menu {
   display: flex;
+  min-width: 290px;
+  margin-bottom: 15px;
 
   @media (max-width: 1024px) {
     width: 100%;

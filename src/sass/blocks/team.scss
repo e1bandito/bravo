@@ -18,10 +18,35 @@
   padding-left: 24px;
   padding-right: 34px;
   margin-bottom: 70px;
+
+  @media (max-width: 1350px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
 }
 
-.team__link img {
-  display: block;
+.team__item {
+  @media (max-width: 1350px) {
+    width: 33%;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.team__link {
+  display: flex;
+  justify-content: center;
+
+  & img {
+    display: block;
+  }
 }
 
 .team__promo {
@@ -30,6 +55,13 @@
   padding: 20px 0 20px 54px;
   display: flex;
   align-items: center;
+
+  @media (max-width: 1400px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 54px;
+    padding-bottom: 0;
+  }
 }
 
 .team__promo-logo {
@@ -37,13 +69,26 @@
   height: 55px;
   margin-right: 68px;
 
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
   & img {
+    width: 137px;
+    height: 55px;
     display: block;
+
+    @media (max-width: 600px) {
+      margin: 0 auto;
+    }
   }
 }
 
 .team__promo-link {
   font-size: 24px;
+  line-height: 30px;
   color: $black;
 
   &:hover {
@@ -62,12 +107,28 @@
   margin-left: auto;
   width: 740px;
   min-height: 98px;
+
+  @media (max-width: 1400px) {
+    padding-top: 30px;
+  }
 }
 
 .team__promo-item {
   width: 33%;
   display: flex;
   align-items: center;
+
+  @media (max-width: 1400px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 
   & span {
     font-size: 36px;

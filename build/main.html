@@ -11,20 +11,77 @@
     <!-- Мобильное меню открывается добавлением модификаторов --open для классов .sidebar, .sidebar__subnav и .page-header__hamburger (.sidebar--open, .sidebar__subnav--open, .page-header__hamburger--open). -->
     <!-- При открытом мобильном меню (.sidebar--open) на body вешается класс ov-h для устранения скролла основного контента. -->
     <!-- При открытом подменю (.sidebar__subnav--open) на .sidebar__list вешается модификатор --ov-h для устранения скролла основного мобильного меню. -->
-    <aside class="sidebar sidebar--open">
+    <aside class="sidebar">
       <a href="#" class="sidebar__logo">
         <img src="img/logo.svg" alt="Bravo" width="146" height="48">
       </a>
       <nav class="main-nav main-nav--mobile">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Дилерам</a></li>
+          <li class="main-nav__item main-nav__item--dropdown"><a href="#" class="main-nav__link">Дилерам</a>
+            <div class="main-nav__dropdown">
+              <div class="main-nav__col">
+                <h3 class="main-nav__title">Помощь</h3>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Как с нами работать</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Для интернет-магазинов</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Как мы доставляем продукцию</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Политика конфиденциальности</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Рекламные материалы</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-nav__col">
+                <h3 class="main-nav__title">Полезное</h3>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Прайс-листы (опт)</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Скачать каталог дверей "Браво"</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Техническая информация</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-nav__col">
+                <h3 class="main-nav__title">Контакты</h3>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Контакты</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Письмо директору</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Книга предложений</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a href="#" class="main-nav__subitem-link">Поставщикам</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-nav__col">
+                <a href="#" class="btn">Стать дилером</a>
+              </div>
+            </div>
+          </li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-листы</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Как с нами работать</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="sidebar__list sidebar__list--ov-h">
+      <ul class="sidebar__list">
         <li class="sidebar__item"><span class="icon-interior"></span>Межкомнатные двери</li>
         <li class="sidebar__item"><span class="icon-entrance"></span>Входные двери</li>
         <li class="sidebar__item"><span class="icon-sliding"></span>Раздвижные двери</li>
@@ -33,7 +90,7 @@
         <li class="sidebar__item"><span class="icon-special"></span>Специальные двери</li>
         <li class="sidebar__item"><span class="icon-hardware"></span>Фурнитура и прочее</li>
         <li class="sidebar__item"><span class="icon-installation"></span>Монтаж и реставрация
-          <div class="sidebar__subnav sidebar__subnav--open">
+          <div class="sidebar__subnav">
             <span class="sidebar__btn">←  Назад</span>
             <h2 class="sidebar__subnav-main-title">Монтаж и реставрация</h2>
             <div class="sidebar__subnav-wrap">
