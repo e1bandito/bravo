@@ -1,6 +1,6 @@
 .dropdown {
   position: relative;
-  z-index: 10;
+  z-index: 2;
 }
 
 .dropdown__placeholder {
@@ -39,7 +39,7 @@
   box-shadow: 0 0 48px #e4e6eb;
   padding-top: 14px;
   padding-bottom: 14px;
-  z-index: 5;
+  z-index: 10;
 
   &::before {
     position: absolute;
