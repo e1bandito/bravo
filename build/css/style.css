@@ -5500,7 +5500,7 @@ a {
   }
 
   .compare__list {
-    padding-top: 146px;
+    padding-top: 296px;
   }
 
   .compare__item {
@@ -5516,8 +5516,8 @@ a {
   }
 
   .compare__img {
-    width: 96px;
-    height: 72px;
+    width: 76px;
+    height: 172px;
     margin-bottom: 24px;
   }
 
@@ -5535,6 +5535,10 @@ a {
 
   .compare__card-item:first-child {
     font-size: 18px;
+  }
+
+  .compare__card {
+    width: 200px;
   }
 
   .contacts__title {
@@ -5893,6 +5897,10 @@ a {
 }
 
 @media (max-width: 700px) {
+  .compare__body .slider__item {
+    width: 100%;
+  }
+
   .information {
     padding-bottom: 75px;
   }
@@ -5917,10 +5925,6 @@ a {
 @media (max-width: 600px) {
   .budge--product {
     top: -15px;
-  }
-
-  .compare__body .slider__item {
-    width: 100%;
   }
 
   .contacts__photo-item {
@@ -6038,8 +6042,8 @@ a {
   }
 
   .compare__sidebar {
-    width: 110px;
-    margin-right: 28px;
+    width: 90px;
+    margin-right: 10px;
   }
 
   .compare__item {
@@ -6048,8 +6052,16 @@ a {
     line-height: 18px;
   }
 
+  .compare__item:nth-child(3) {
+    min-height: 54px;
+  }
+
+  .compare__item:nth-child(4) {
+    min-height: 54px;
+  }
+
   .compare__body {
-    width: calc(100% - 138px);
+    width: calc(100% - 100px);
   }
 
   .compare__card-item {
@@ -6059,6 +6071,10 @@ a {
 
   .compare__card-item:nth-child(4) {
     min-height: 36px;
+  }
+
+  .compare__card {
+    width: auto;
   }
 
   .contacts__storage-address {
